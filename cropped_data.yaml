@@ -1,0 +1,17 @@
+path: /home/pederu/Documents/YOLOv8_project/cropped_dataset
+train: images/train
+val: images/val
+
+names:
+  0: car
+  1: truck
+  2: bus
+  3: motorcycle
+  4: bicycle
+  5: scooter
+  6: person
+  7: rider
+
+wandb:
+  project: "YOLOv8"
+  entity: "pederu00"
