@@ -22,4 +22,27 @@
 
 # Faster R-CNN
 
--- 
+-- install the requirements listed in the requirements.txt file
+
+-- put the images in the data/images folder
+
+-- put the labels in the data/labels folder
+
+-- run the data/datasort.py 
+
+-- run the data/label_to_xml.py three times, changing the variable dataset_type so it is run once as test, train and val
+
+-- If necessary, change the paths in th data_config/ntnu.yaml file
+
+
+-- in terminal (in the Faster R-CNN folder) run this command to train:
+python train.py --data data_configs/ntnu.yaml --epochs 25 --batch 16 --imgsz 1024 -ca -uta
+
+
+-- run this command to eval
+python eval.py --model fasterrcnn_resnet50_fpn_v2 --weights outputs/training/res_1/best_model.pth --data data_configs/ntnu.yaml --batch 4 --imgsz 1024
+
+
+-- run these commands to run inference
+python inference.py --input data/dataset_voc/archive/test/images/frame_000322.png --weights outputs/training/res_1/best_model.pth --imgsz 1024
+python inference.py --input data/dataset_voc/archive/test/images/frame_000561.png --weights outputs/training/res_1/best_model.pth --imgsz 1024
