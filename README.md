@@ -42,7 +42,7 @@
 
 -- in terminal (in the Faster R-CNN folder) run this command to train:
 
-python train.py --data data_configs/ntnu.yaml --epochs 25 --batch 16 --imgsz 1024 -ca -uta
+python train.py --data data_configs/ntnu.yaml --epochs 100 --batch 16 --imgsz 1024 -ca -uta
 
 
 -- run this command to eval
