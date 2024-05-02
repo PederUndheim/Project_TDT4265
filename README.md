@@ -22,7 +22,12 @@
 
 # Faster R-CNN
 
+
 -- install the requirements listed in the requirements.txt file
+
+-- within /data, create folders test, train, val, images, and labels
+
+-- within /data/test, /data/train and /data/val, create folders annotation, images, and labels
 
 -- put the images in the data/images folder
 
@@ -32,7 +37,7 @@
 
 -- run the data/label_to_xml.py three times, changing the variable dataset_type so it is run once as test, train and val
 
--- If necessary, change the paths in th data_config/ntnu.yaml file
+-- If necessary, change the paths in the data_config/ntnu.yaml file
 
 
 -- in terminal (in the Faster R-CNN folder) run this command to train:
