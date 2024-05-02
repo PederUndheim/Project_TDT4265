@@ -1,0 +1,63 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/labels/train.cache... 1371 images, 0 backgrounds, 0 corrupt: 100%|██████████| 1371/1371 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/labels/val.cache... 343 images, 0 backgrounds, 0 corrupt: 100%|██████████| 343/343 [00:00<?, ?it/s]
+/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+Plotting labels to runs/detect/train223/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000833, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+[34m[1mTensorBoard: [39m[22mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/train223
+Starting training for 10 epochs...
+Closing dataloader mosaic
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+       1/10      2.41G      2.459      3.859      1.238        132        640: 100%|██████████| 86/86 [01:13<00:00,  1.17it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  82%|████████▏ | 9/11 [00:00<00:00, 12.40it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 11/11 [00:01<00:00,  9.85it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       2/10      2.36G      1.964      1.996      1.034        105        640: 100%|██████████| 86/86 [00:55<00:00,  1.56it/s]
+
+
+
+

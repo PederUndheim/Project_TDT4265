@@ -1,0 +1,161 @@
+{
+    "os": "Linux-5.15.0-102-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-04-23T10:00:12.896114",
+    "startedAt": "2024-04-23T10:00:11.351013",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "host": "clab20",
+    "username": "pederu",
+    "executable": "/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 4957.134125,
+        "min": 3000.0,
+        "max": 4700.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 5177.878,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 5177.924,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 5177.885,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4700.0,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 5177.858,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 5177.89,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4976.411,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4700.0,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4976.33,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4700.0,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4976.329,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4976.33,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4700.0,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 5177.842,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 5179.324,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 5177.883,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 5176.172,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 5177.833,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4976.982,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4976.951,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4700.0,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4976.929,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4976.868,
+            "min": 3000.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4976.871,
+            "min": 3000.0,
+            "max": 4700.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 97.87200164794922,
+            "used": 51.284297943115234
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 61.942718505859375
+    }
+}

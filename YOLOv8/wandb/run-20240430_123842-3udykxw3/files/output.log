@@ -1,0 +1,155 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+WARNING ⚠️ updating to 'imgsz=1080'. 'train' and 'val' imgsz must be an integer, while 'predict' and 'export' imgsz may be a [h, w] list or an integer, i.e. 'yolo export imgsz=640,480' or 'yolo export imgsz=640'
+WARNING ⚠️ imgsz=[1080] must be multiple of max stride 32, updating to [1088]
+[34m[1mtrain: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/labels/train.cache... 1371 images, 0 backgrounds, 0 corrupt: 100%|██████████| 1371/1371 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/labels/val.cache... 343 images, 0 backgrounds, 0 corrupt: 100%|██████████| 343/343 [00:00<?, ?it/s]
+Plotting labels to runs/detect/train14/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.85' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000833, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.00046875), 63 bias(decay=0.0)
+       1/50      10.7G      2.593      5.237       1.67        712       1088:   2%|▏         | 1/46 [00:00<00:09,  4.85it/s]
+[34m[1mTensorBoard: [39m[22mmodel graph visualization added ✅
+Image sizes 1088 train, 1088 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/train14
+Starting training for 50 epochs...
+
+
+
+
+
+       1/50        14G      2.314      3.676      1.305        819       1088:  98%|█████████▊| 45/46 [00:10<00:00,  5.20it/s]
+                   all        343       4316     0.0242      0.176      0.105     0.0593
+       1/50        14G      2.306      3.642      1.302        463       1088: 100%|██████████| 46/46 [00:10<00:00,  4.45it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 6/6 [00:00<00:00, 12.87it/s]
+
+
+
+
+       2/50      14.6G      1.754      1.728      1.064        770       1088:  93%|█████████▎| 43/46 [00:08<00:00,  4.72it/s]
+       2/50      14.6G       1.75       1.72      1.061        510       1088: 100%|██████████| 46/46 [00:09<00:00,  4.83it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 6/6 [00:00<00:00, 12.94it/s]
+  0%|          | 0/46 [00:00<?, ?it/s]
+
+
+
+
+       3/50      17.3G      1.628      1.457      1.028        507       1088: 100%|██████████| 46/46 [00:09<00:00,  4.83it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  67%|██████▋   | 4/6 [00:00<00:00,  7.74it/s]
+                   all        343       4316       0.55      0.294      0.343      0.191
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 6/6 [00:00<00:00,  9.36it/s]
+
+       4/50      12.4G      1.594      1.372      1.009        756       1088:  33%|███▎      | 15/46 [00:03<00:06,  4.67it/s]
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+New https://pypi.org/project/ultralytics/8.2.5 available 😃 Update with 'pip install -U ultralytics'
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+New https://pypi.org/project/ultralytics/8.2.5 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics YOLOv8.1.46 🚀 Python-3.10.12 torch-2.3.0+cu121 CUDA:0 (NVIDIA GeForce RTX 4090, 24195MiB)
+[34m[1mengine/trainer: [39m[22mtask=detect, mode=train, model=yolov8n.pt, data=/home/pederu/Documents/YOLOv8_project/data.yaml, epochs=50, time=None, patience=100, batch=30, imgsz=(1080, 128), save=True, save_period=-1, cache=False, device=None, workers=8, project=None, name=train14, exist_ok=False, pretrained=True, optimizer=AdamW, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, multi_scale=False, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, vid_stride=1, stream_buffer=False, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, embed=None, show=False, save_frames=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, show_boxes=True, line_width=None, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=None, workspace=4, nms=False, lr0=0.000833, lrf=0.01, momentum=0.85, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, label_smoothing=0.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.0, bgr=0.0, mosaic=1.0, mixup=0.0, copy_paste=0.0, auto_augment=randaugment, erasing=0.4, crop_fraction=1.0, cfg=None, tracker=botsort.yaml, save_dir=runs/detect/train14
+Overriding model.yaml nc=80 with nc=8
+                   from  n    params  module                                       arguments
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]
+  2                  -1  1      7360  ultralytics.nn.modules.block.C2f             [32, 32, 1, True]
+  3                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+  4                  -1  2     49664  ultralytics.nn.modules.block.C2f             [64, 64, 2, True]
+  5                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]
+  6                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]
+  8                  -1  1    460288  ultralytics.nn.modules.block.C2f             [256, 256, 1, True]
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 12                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 15                  -1  1     37248  ultralytics.nn.modules.block.C2f             [192, 64, 1]
+ 16                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 18                  -1  1    123648  ultralytics.nn.modules.block.C2f             [192, 128, 1]
+ 19                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 21                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]
+ 22        [15, 18, 21]  1    752872  ultralytics.nn.modules.head.Detect           [8, [64, 128, 256]]
+Model summary: 225 layers, 3012408 parameters, 3012392 gradients, 8.2 GFLOPs
+Transferred 319/355 items from pretrained weights
+[34m[1mTensorBoard: [39m[22mStart with 'tensorboard --logdir runs/detect/train14', view at http://localhost:6006/
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+WARNING ⚠️ updating to 'imgsz=1080'. 'train' and 'val' imgsz must be an integer, while 'predict' and 'export' imgsz may be a [h, w] list or an integer, i.e. 'yolo export imgsz=640,480' or 'yolo export imgsz=640'
+WARNING ⚠️ imgsz=[1080] must be multiple of max stride 32, updating to [1088]
+[34m[1mtrain: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/labels/train.cache... 1371 images, 0 backgrounds, 0 corrupt: 100%|██████████| 1371/1371 [00:00<?, ?it/s]
+Plotting labels to runs/detect/train14/labels.jpg...
+[34m[1mval: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/labels/val.cache... 343 images, 0 backgrounds, 0 corrupt: 100%|██████████| 343/343 [00:00<?, ?it/s]
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000833, momentum=0.85) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.00046875), 63 bias(decay=0.0)
+       1/50      20.8G      2.651      5.356      1.636        730       1088:   4%|▍         | 2/46 [00:00<00:12,  3.65it/s]
+[34m[1mTensorBoard: [39m[22mmodel graph visualization added ✅
+Image sizes 1088 train, 1088 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/train14
+Starting training for 50 epochs...
+       1/50      21.4G      2.613      5.292      1.624        890       1088:   7%|▋         | 3/46 [00:01<00:16,  2.68it/s]
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+New https://pypi.org/project/ultralytics/8.2.5 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics YOLOv8.1.46 🚀 Python-3.10.12 torch-2.3.0+cu121 CUDA:0 (NVIDIA GeForce RTX 4090, 24195MiB)
+[34m[1mengine/trainer: [39m[22mtask=detect, mode=train, model=yolov8n.pt, data=/home/pederu/Documents/YOLOv8_project/data.yaml, epochs=50, time=None, patience=100, batch=30, imgsz=(1080, 128), save=True, save_period=-1, cache=False, device=None, workers=8, project=None, name=train15, exist_ok=False, pretrained=True, optimizer=AdamW, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, multi_scale=False, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, vid_stride=1, stream_buffer=False, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, embed=None, show=False, save_frames=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, show_boxes=True, line_width=None, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=None, workspace=4, nms=False, lr0=0.000833, lrf=0.01, momentum=0.87, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, label_smoothing=0.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.0, bgr=0.0, mosaic=1.0, mixup=0.0, copy_paste=0.0, auto_augment=randaugment, erasing=0.4, crop_fraction=1.0, cfg=None, tracker=botsort.yaml, save_dir=runs/detect/train15
+Overriding model.yaml nc=80 with nc=8
+                   from  n    params  module                                       arguments
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]
+  2                  -1  1      7360  ultralytics.nn.modules.block.C2f             [32, 32, 1, True]
+  3                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+  4                  -1  2     49664  ultralytics.nn.modules.block.C2f             [64, 64, 2, True]
+  5                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]
+  6                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]
+  8                  -1  1    460288  ultralytics.nn.modules.block.C2f             [256, 256, 1, True]
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 12                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 15                  -1  1     37248  ultralytics.nn.modules.block.C2f             [192, 64, 1]
+ 16                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 18                  -1  1    123648  ultralytics.nn.modules.block.C2f             [192, 128, 1]
+ 19                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 21                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]
+ 22        [15, 18, 21]  1    752872  ultralytics.nn.modules.head.Detect           [8, [64, 128, 256]]
+Model summary: 225 layers, 3012408 parameters, 3012392 gradients, 8.2 GFLOPs
+Transferred 319/355 items from pretrained weights
+[34m[1mTensorBoard: [39m[22mStart with 'tensorboard --logdir runs/detect/train15', view at http://localhost:6006/
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mtrain: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/labels/train.cache... 1371 images, 0 backgrounds, 0 corrupt: 100%|██████████| 1371/1371 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/labels/val.cache... 343 images, 0 backgrounds, 0 corrupt: 100%|██████████| 343/343 [00:00<?, ?it/s]
+[34m[1mAMP: [39m[22mchecks passed ✅
+WARNING ⚠️ updating to 'imgsz=1080'. 'train' and 'val' imgsz must be an integer, while 'predict' and 'export' imgsz may be a [h, w] list or an integer, i.e. 'yolo export imgsz=640,480' or 'yolo export imgsz=640'
+WARNING ⚠️ imgsz=[1080] must be multiple of max stride 32, updating to [1088]
+Plotting labels to runs/detect/train15/labels.jpg...
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7ff36d0afeb0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1479, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1443, in _shutdown_workers
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 40, in wait
+    if not wait([self.sentinel], timeout):
+  File "/usr/lib/python3.10/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt:

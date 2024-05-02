@@ -1,0 +1,915 @@
+2024-04-30 16:26:18,881 INFO    StreamThr :19189 [internal.py:wandb_internal():86] W&B internal server running at pid: 19189, started at: 2024-04-30 16:26:18.880247
+2024-04-30 16:26:18,881 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status
+2024-04-30 16:26:18,883 INFO    WriterThread:19189 [datastore.py:open_for_write():87] open: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/run-rsigpuo5.wandb
+2024-04-30 16:26:18,884 DEBUG   SenderThread:19189 [sender.py:send():379] send: header
+2024-04-30 16:26:18,886 DEBUG   SenderThread:19189 [sender.py:send():379] send: run
+2024-04-30 16:26:19,511 INFO    SenderThread:19189 [dir_watcher.py:__init__():211] watching files in: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files
+2024-04-30 16:26:19,512 INFO    SenderThread:19189 [sender.py:_start_run_threads():1124] run started: rsigpuo5 with start time 1714487178.879857
+2024-04-30 16:26:19,525 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: check_version
+2024-04-30 16:26:19,525 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: check_version
+2024-04-30 16:26:19,597 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: run_start
+2024-04-30 16:26:19,598 DEBUG   HandlerThread:19189 [system_info.py:__init__():26] System info init
+2024-04-30 16:26:19,598 DEBUG   HandlerThread:19189 [system_info.py:__init__():41] System info init done
+2024-04-30 16:26:19,598 INFO    HandlerThread:19189 [system_monitor.py:start():194] Starting system monitor
+2024-04-30 16:26:19,599 INFO    SystemMonitor:19189 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-30 16:26:19,599 INFO    HandlerThread:19189 [system_monitor.py:probe():214] Collecting system info
+2024-04-30 16:26:19,599 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started cpu monitoring
+2024-04-30 16:26:19,600 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started disk monitoring
+2024-04-30 16:26:19,600 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started gpu monitoring
+2024-04-30 16:26:19,600 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started memory monitoring
+2024-04-30 16:26:19,601 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started network monitoring
+2024-04-30 16:26:19,629 DEBUG   HandlerThread:19189 [system_info.py:probe():150] Probing system
+2024-04-30 16:26:19,629 DEBUG   HandlerThread:19189 [gitlib.py:_init_repo():56] git repository is invalid
+2024-04-30 16:26:19,629 DEBUG   HandlerThread:19189 [system_info.py:probe():198] Probing system done
+2024-04-30 16:26:19,629 DEBUG   HandlerThread:19189 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-105-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-04-30T14:26:19.629074', 'startedAt': '2024-04-30T14:26:18.864456', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'host': 'clab26', 'username': 'pederu', 'executable': '/bin/python', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 3534.0700416666664, 'min': 3000.0, 'max': 4700.0}, 'cpu_freq_per_core': [{'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 4700.0, 'min': 3000.0, 'max': 4700.0}, {'current': 2843.244, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 4700.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 4700.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 4700.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 4700.0, 'min': 3000.0, 'max': 4700.0}, {'current': 4700.0, 'min': 3000.0, 'max': 4700.0}, {'current': 4700.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}], 'disk': {'/': {'total': 97.87200164794922, 'used': 48.79147720336914}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 61.942710876464844}}
+2024-04-30 16:26:19,629 INFO    HandlerThread:19189 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-30 16:26:19,629 INFO    HandlerThread:19189 [system_monitor.py:probe():227] Publishing system info
+2024-04-30 16:26:19,631 INFO    HandlerThread:19189 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-30 16:26:19,631 DEBUG   SenderThread:19189 [sender.py:send():379] send: files
+2024-04-30 16:26:19,631 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-30 16:26:19,825 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-30 16:26:19,825 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: python_packages
+2024-04-30 16:26:19,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:26:19,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:26:19,869 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:26:20,144 DEBUG   SenderThread:19189 [sender.py:send():379] send: telemetry
+2024-04-30 16:26:20,289 INFO    wandb-upload_0:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/c2zym4ti-wandb-metadata.json
+2024-04-30 16:26:20,513 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/requirements.txt
+2024-04-30 16:26:20,514 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:20,514 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-metadata.json
+2024-04-30 16:26:22,514 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:22,793 DEBUG   SenderThread:19189 [sender.py:send():379] send: telemetry
+2024-04-30 16:26:22,793 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:22,793 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,084 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,100 DEBUG   SenderThread:19189 [sender.py:send():379] send: files
+2024-04-30 16:26:23,100 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,100 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file media/images/labels_1_3f103603b6de871d045f.jpg with policy now
+2024-04-30 16:26:23,124 DEBUG   SenderThread:19189 [sender.py:send():379] send: files
+2024-04-30 16:26:23,124 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,124 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file media/images/train_batch0_1_ab3b782d31e2021d8334.jpg with policy now
+2024-04-30 16:26:23,161 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,218 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,219 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,219 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:23,219 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:23,222 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:23,456 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,482 DEBUG   SenderThread:19189 [sender.py:send():379] send: files
+2024-04-30 16:26:23,482 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,482 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file media/images/train_batch1_2_4921ae73173ad0caff8e.jpg with policy now
+2024-04-30 16:26:23,516 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images/train_batch0_1_ab3b782d31e2021d8334.jpg
+2024-04-30 16:26:23,516 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images/train_batch1_2_4921ae73173ad0caff8e.jpg
+2024-04-30 16:26:23,517 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:23,517 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images/labels_1_3f103603b6de871d045f.jpg
+2024-04-30 16:26:23,517 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images
+2024-04-30 16:26:23,518 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media
+2024-04-30 16:26:23,538 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,539 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,539 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:23,539 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:23,541 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:23,718 INFO    wandb-upload_0:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/9chh7s00-media/images/labels_1_3f103603b6de871d045f.jpg
+2024-04-30 16:26:23,775 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,801 DEBUG   SenderThread:19189 [sender.py:send():379] send: files
+2024-04-30 16:26:23,801 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,801 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file media/images/train_batch2_3_d9172bcdebbc3643517b.jpg with policy now
+2024-04-30 16:26:23,855 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,855 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:23,855 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:23,856 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:23,858 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:24,075 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:24,092 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:26:24,139 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:24,139 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:24,139 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:24,140 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:24,141 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:24,148 INFO    wandb-upload_1:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/m90et8dm-media/images/train_batch0_1_ab3b782d31e2021d8334.jpg
+2024-04-30 16:26:24,523 INFO    wandb-upload_2:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/mzjzq4hr-media/images/train_batch1_2_4921ae73173ad0caff8e.jpg
+2024-04-30 16:26:24,625 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:24,627 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:24,627 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:24,627 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images/train_batch2_3_d9172bcdebbc3643517b.jpg
+2024-04-30 16:26:24,627 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images
+2024-04-30 16:26:24,685 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:24,685 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:24,685 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:24,686 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:24,688 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:24,896 INFO    wandb-upload_0:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/unctuh13-media/images/train_batch2_3_d9172bcdebbc3643517b.jpg
+2024-04-30 16:26:25,167 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:25,234 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:25,234 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:25,234 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:25,235 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:25,236 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:25,269 INFO    wandb-upload_1:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/m5eqzblo-media/images/labels_1_3f103603b6de871d045f.jpg
+2024-04-30 16:26:25,728 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:25,729 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:25,789 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:25,790 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:25,790 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:25,790 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:25,792 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:26,048 INFO    wandb-upload_2:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/x5kh84dv-media/images/train_batch0_1_ab3b782d31e2021d8334.jpg
+2024-04-30 16:26:26,272 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:26,345 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:26,345 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:26,345 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:26,345 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:26,347 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:26,384 INFO    wandb-upload_0:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/g0fx7rgk-media/images/train_batch1_2_4921ae73173ad0caff8e.jpg
+2024-04-30 16:26:26,803 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:26,803 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:26,974 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:27,005 INFO    wandb-upload_1:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/p7s2y893-media/images/train_batch2_3_d9172bcdebbc3643517b.jpg
+2024-04-30 16:26:27,040 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:27,041 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:27,041 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:27,041 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:27,171 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:27,538 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:27,600 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:27,601 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:27,601 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:27,601 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:27,603 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:27,919 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:28,093 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:28,156 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:28,156 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:28,156 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:28,156 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:28,158 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:28,639 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:28,706 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:28,706 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:28,707 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:28,708 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:28,710 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:29,024 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:29,024 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:29,196 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:29,210 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:26:29,260 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:29,260 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:29,260 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:29,260 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:29,262 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:29,746 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:29,822 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:29,823 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:29,823 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:29,823 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:29,825 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:30,141 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:30,313 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:30,377 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:30,377 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:30,377 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:30,378 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:30,380 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:30,978 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:31,050 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:31,051 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:31,051 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:31,051 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:31,053 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:31,142 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:31,142 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:31,537 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:31,601 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:31,602 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:31,602 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:31,602 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:31,604 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:32,091 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:32,143 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:32,151 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:32,152 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:32,152 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:32,152 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:32,154 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:32,642 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:32,702 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:32,702 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:32,703 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:32,703 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:32,705 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:33,194 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:33,195 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:33,195 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:33,254 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:33,254 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:33,254 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:33,255 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:33,256 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:33,744 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:33,803 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:33,804 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:33,804 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:33,804 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:33,806 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:34,293 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:34,295 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:34,295 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:34,308 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:26:34,371 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:34,371 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:34,371 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:34,371 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:34,373 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:34,825 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:26:34,826 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:26:34,826 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:26:34,994 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:35,081 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:35,082 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:35,082 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:35,082 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:35,084 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:35,378 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:35,552 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:35,620 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:35,620 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:35,620 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:35,621 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:35,623 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:36,113 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:36,173 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:36,173 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:36,173 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:36,173 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:36,175 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:36,487 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:36,487 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:36,658 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:36,721 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:36,721 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:36,721 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:36,721 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:36,723 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:37,211 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:37,274 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:37,275 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:37,275 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:37,275 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:37,277 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:37,591 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:37,762 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:37,832 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:37,833 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:37,833 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:37,833 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:37,835 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:38,321 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:38,382 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:38,383 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:38,383 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:38,383 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:38,412 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:38,593 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:38,593 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:38,998 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:39,058 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:39,058 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:39,059 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:39,059 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:39,060 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:39,550 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:39,564 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:26:39,594 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:39,608 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:39,609 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:39,609 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:39,609 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:39,611 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:40,101 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:40,159 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:40,159 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:40,160 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:40,160 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:40,162 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:40,642 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:40,642 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:40,642 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:40,708 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:40,708 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:40,708 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:40,708 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:40,710 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:41,192 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:41,253 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:41,254 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:41,254 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:41,255 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:41,256 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:41,741 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:41,741 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:41,813 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:41,814 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:41,814 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:41,814 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:41,816 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:42,302 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:42,359 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:42,360 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:42,360 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:42,360 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:42,362 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:42,786 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:42,786 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:42,960 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:43,020 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:43,020 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:43,020 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:43,020 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:43,022 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:43,505 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:43,580 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:43,581 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:43,581 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:43,581 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:43,583 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:43,901 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:44,071 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:44,133 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:44,134 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:44,134 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:44,134 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:44,136 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:44,622 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:44,637 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:26:44,902 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:44,903 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:44,923 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:44,923 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:44,923 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:44,923 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:44,925 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:45,442 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:45,468 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:45,468 DEBUG   SenderThread:19189 [sender.py:send():379] send: files
+2024-04-30 16:26:45,469 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file media/images/train_batch40_41_2dd648e9bc74f7f1e279.jpg with policy now
+2024-04-30 16:26:45,531 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:45,532 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:45,532 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:45,532 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:45,534 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:46,037 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:46,038 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:46,038 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images/train_batch40_41_2dd648e9bc74f7f1e279.jpg
+2024-04-30 16:26:46,039 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images
+2024-04-30 16:26:46,063 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:46,063 DEBUG   SenderThread:19189 [sender.py:send():379] send: files
+2024-04-30 16:26:46,063 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file media/images/train_batch41_42_8b798ac6609fd45fdc59.jpg with policy now
+2024-04-30 16:26:46,129 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:46,129 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:46,129 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:46,129 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:46,131 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:46,305 INFO    wandb-upload_2:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/yfv5a5py-media/images/train_batch40_41_2dd648e9bc74f7f1e279.jpg
+2024-04-30 16:26:46,656 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:46,682 DEBUG   SenderThread:19189 [sender.py:send():379] send: files
+2024-04-30 16:26:46,682 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:46,683 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file media/images/train_batch42_43_011a981bbfea4737ea8d.jpg with policy now
+2024-04-30 16:26:46,745 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:46,746 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:46,746 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:46,746 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:46,748 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:47,067 INFO    wandb-upload_1:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/r5mubx7v-media/images/train_batch41_42_8b798ac6609fd45fdc59.jpg
+2024-04-30 16:26:47,189 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:47,189 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:47,189 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images/train_batch42_43_011a981bbfea4737ea8d.jpg
+2024-04-30 16:26:47,189 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images/train_batch41_42_8b798ac6609fd45fdc59.jpg
+2024-04-30 16:26:47,189 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images
+2024-04-30 16:26:47,363 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:47,391 INFO    wandb-upload_0:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/2b6tgphp-media/images/train_batch40_41_2dd648e9bc74f7f1e279.jpg
+2024-04-30 16:26:47,426 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:47,426 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:47,426 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:47,427 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:47,428 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:47,712 INFO    wandb-upload_2:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/6nm68lgm-media/images/train_batch42_43_011a981bbfea4737ea8d.jpg
+2024-04-30 16:26:47,909 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:47,972 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:47,972 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:47,973 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:47,973 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:47,974 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:48,309 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:48,309 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:48,312 INFO    wandb-upload_1:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/c2t98ybk-media/images/train_batch41_42_8b798ac6609fd45fdc59.jpg
+2024-04-30 16:26:48,480 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:48,542 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:48,542 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:48,543 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:48,543 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:48,544 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:48,834 INFO    wandb-upload_0:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/r5qcvotb-media/images/train_batch42_43_011a981bbfea4737ea8d.jpg
+2024-04-30 16:26:49,035 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:49,098 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:49,098 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:49,098 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:49,099 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:49,101 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:49,419 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:49,419 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:49,593 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:49,662 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:26:49,662 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:49,662 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:49,825 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:26:49,826 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:26:50,151 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:50,151 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:50,152 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:50,154 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:50,154 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:26:50,227 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:50,227 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:50,398 DEBUG   SenderThread:19189 [sender.py:send():379] send: history
+2024-04-30 16:26:50,398 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: summary_record
+2024-04-30 16:26:50,540 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-30 16:26:50,544 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:50,544 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:50,544 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/config.yaml
+2024-04-30 16:26:50,712 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:51,545 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/wandb-summary.json
+2024-04-30 16:26:52,546 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:52,856 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:52,881 DEBUG   SenderThread:19189 [sender.py:send():379] send: files
+2024-04-30 16:26:52,882 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:52,882 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file media/images/val_batch0_labels_50_8ac76efe172585728f32.jpg with policy now
+2024-04-30 16:26:52,909 DEBUG   SenderThread:19189 [sender.py:send():379] send: files
+2024-04-30 16:26:52,909 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file media/images/val_batch0_pred_50_6c40687a99b3daf9b018.jpg with policy now
+2024-04-30 16:26:52,909 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:52,989 DEBUG   SenderThread:19189 [sender.py:send():379] send: files
+2024-04-30 16:26:52,989 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:52,989 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file media/images/confusion_matrix_normalized_50_6882620e43e6cd17155f.png with policy now
+2024-04-30 16:26:53,069 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:53,069 DEBUG   SenderThread:19189 [sender.py:send():379] send: files
+2024-04-30 16:26:53,070 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file media/images/confusion_matrix_50_456304153308c4592154.png with policy now
+2024-04-30 16:26:53,316 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-30 16:26:53,316 DEBUG   SenderThread:19189 [sender.py:send():379] send: files
+2024-04-30 16:26:53,317 INFO    SenderThread:19189 [sender.py:_save_file():1390] saving file media/images/results_50_85fe9ffdb8a1bd79c7c2.png with policy now
+2024-04-30 16:26:53,548 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images/results_50_85fe9ffdb8a1bd79c7c2.png
+2024-04-30 16:26:53,549 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images/val_batch0_labels_50_8ac76efe172585728f32.jpg
+2024-04-30 16:26:53,549 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images/confusion_matrix_50_456304153308c4592154.png
+2024-04-30 16:26:53,549 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images/confusion_matrix_normalized_50_6882620e43e6cd17155f.png
+2024-04-30 16:26:53,550 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images/val_batch0_pred_50_6c40687a99b3daf9b018.jpg
+2024-04-30 16:26:53,550 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/media/images
+2024-04-30 16:26:53,621 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: log_artifact
+2024-04-30 16:26:53,621 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: log_artifact
+2024-04-30 16:26:53,860 INFO    wandb-upload_0:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/muxbwwej-media/images/val_batch0_pred_50_6c40687a99b3daf9b018.jpg
+2024-04-30 16:26:53,928 INFO    wandb-upload_2:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/dqj70jdl-media/images/val_batch0_labels_50_8ac76efe172585728f32.jpg
+2024-04-30 16:26:53,948 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: pause
+2024-04-30 16:26:53,948 INFO    HandlerThread:19189 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-04-30 16:26:53,948 INFO    HandlerThread:19189 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-30 16:26:53,949 DEBUG   SystemMonitor:19189 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-30 16:26:53,949 DEBUG   SystemMonitor:19189 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-30 16:26:53,949 DEBUG   SystemMonitor:19189 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-30 16:26:53,949 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-30 16:26:53,949 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined disk monitor
+2024-04-30 16:26:53,999 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-30 16:26:53,999 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined memory monitor
+2024-04-30 16:26:54,000 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined network monitor
+2024-04-30 16:26:54,028 INFO    wandb-upload_3:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/euixtdtn-media/images/confusion_matrix_50_456304153308c4592154.png
+2024-04-30 16:26:54,237 INFO    wandb-upload_1:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/z0bjri21-media/images/confusion_matrix_normalized_50_6882620e43e6cd17155f.png
+2024-04-30 16:26:54,307 INFO    wandb-upload_4:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/skh384zo-media/images/results_50_85fe9ffdb8a1bd79c7c2.png
+2024-04-30 16:26:54,549 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:26:54,903 INFO    wandb-upload_0:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/hql6n4ar-media/images/val_batch0_labels_50_8ac76efe172585728f32.jpg
+2024-04-30 16:26:55,197 INFO    wandb-upload_2:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/of2uaddc-media/images/confusion_matrix_50_456304153308c4592154.png
+2024-04-30 16:26:55,424 INFO    wandb-upload_3:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/iwx0x0oi-media/images/confusion_matrix_normalized_50_6882620e43e6cd17155f.png
+2024-04-30 16:26:55,489 INFO    wandb-upload_4:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/gr0gn5fb-media/images/val_batch0_pred_50_6c40687a99b3daf9b018.jpg
+2024-04-30 16:26:55,738 INFO    wandb-upload_0:19189 [upload_job.py:push():131] Uploaded file /tmp/tmpkr78y9rhwandb/xi6s3wdg-media/images/results_50_85fe9ffdb8a1bd79c7c2.png
+2024-04-30 16:26:56,091 INFO    wandb-upload_1:19189 [upload_job.py:push():89] Uploaded file /home/pederu/.local/share/wandb/artifacts/staging/tmpbejecd4d
+2024-04-30 16:26:56,846 INFO    SenderThread:19189 [sender.py:send_request_log_artifact():1456] logged artifact run_rsigpuo5_model - {'id': 'QXJ0aWZhY3Q6ODE2MTI2NDM1', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2ODc4OTg1Nw==', 'latestArtifact': None}}
+2024-04-30 16:26:56,846 DEBUG   SenderThread:19189 [sender.py:send():379] send: stats
+2024-04-30 16:26:56,846 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:27:01,847 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:27:04,825 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:27:04,826 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:27:04,826 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:27:06,991 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:27:11,992 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:27:16,993 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:27:19,826 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:27:19,826 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:27:19,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:27:22,044 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:27:27,045 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:27:32,045 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:27:34,826 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:27:34,826 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:27:34,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:27:37,081 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:27:42,082 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:27:47,083 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:27:49,826 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:27:49,826 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:27:49,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:27:53,040 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:27:58,041 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:28:03,041 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:28:04,826 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:28:04,826 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:28:04,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:28:08,087 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:28:13,088 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:28:18,089 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:28:19,826 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:28:19,826 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:28:19,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:28:24,065 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:28:29,065 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:28:34,066 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:28:34,826 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:28:34,826 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:28:34,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:28:39,089 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:28:44,090 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:28:49,091 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:28:49,826 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:28:49,827 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:28:49,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:28:54,999 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:28:59,999 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:29:04,826 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:29:04,827 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:29:04,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:29:05,093 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:29:10,093 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:29:15,094 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:29:19,826 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:29:19,827 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:29:19,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:29:21,032 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:29:21,911 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: resume
+2024-04-30 16:29:21,911 INFO    HandlerThread:19189 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-04-30 16:29:21,911 INFO    HandlerThread:19189 [system_monitor.py:start():194] Starting system monitor
+2024-04-30 16:29:21,912 INFO    SystemMonitor:19189 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-30 16:29:21,912 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started cpu monitoring
+2024-04-30 16:29:21,912 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started disk monitoring
+2024-04-30 16:29:21,913 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started gpu monitoring
+2024-04-30 16:29:21,913 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started memory monitoring
+2024-04-30 16:29:21,914 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started network monitoring
+2024-04-30 16:29:21,953 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: pause
+2024-04-30 16:29:21,953 INFO    HandlerThread:19189 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-04-30 16:29:21,953 INFO    HandlerThread:19189 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-30 16:29:21,953 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-30 16:29:21,953 DEBUG   SystemMonitor:19189 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-30 16:29:21,953 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined disk monitor
+2024-04-30 16:29:21,953 DEBUG   SystemMonitor:19189 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-30 16:29:21,953 DEBUG   SystemMonitor:19189 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-30 16:29:21,984 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-30 16:29:21,984 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined memory monitor
+2024-04-30 16:29:21,985 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined network monitor
+2024-04-30 16:29:21,985 DEBUG   SenderThread:19189 [sender.py:send():379] send: stats
+2024-04-30 16:29:26,986 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:29:31,987 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:29:34,827 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:29:34,827 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:29:34,829 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:29:37,065 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:29:42,066 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:29:47,068 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:29:49,827 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:29:49,827 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:29:49,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:29:53,010 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:29:58,012 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:30:03,013 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:30:04,827 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:30:04,827 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:30:04,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:30:08,077 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:30:11,237 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: resume
+2024-04-30 16:30:11,237 INFO    HandlerThread:19189 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-04-30 16:30:11,237 INFO    HandlerThread:19189 [system_monitor.py:start():194] Starting system monitor
+2024-04-30 16:30:11,237 INFO    SystemMonitor:19189 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-30 16:30:11,237 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started cpu monitoring
+2024-04-30 16:30:11,238 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started disk monitoring
+2024-04-30 16:30:11,238 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started gpu monitoring
+2024-04-30 16:30:11,239 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started memory monitoring
+2024-04-30 16:30:11,239 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started network monitoring
+2024-04-30 16:30:12,692 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: pause
+2024-04-30 16:30:12,692 INFO    HandlerThread:19189 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-04-30 16:30:12,692 INFO    HandlerThread:19189 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-30 16:30:12,692 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-30 16:30:12,693 DEBUG   SystemMonitor:19189 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-30 16:30:12,693 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined disk monitor
+2024-04-30 16:30:12,693 DEBUG   SystemMonitor:19189 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-30 16:30:12,693 DEBUG   SystemMonitor:19189 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-30 16:30:12,747 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-30 16:30:12,747 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined memory monitor
+2024-04-30 16:30:12,747 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined network monitor
+2024-04-30 16:30:12,748 DEBUG   SenderThread:19189 [sender.py:send():379] send: stats
+2024-04-30 16:30:12,836 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:30:13,748 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:30:14,838 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:30:18,749 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:30:19,827 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:30:19,827 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:30:19,829 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:30:24,007 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:30:29,008 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:30:34,009 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:30:34,827 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:30:34,827 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:30:34,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:30:39,997 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:30:44,998 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:30:49,827 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:30:49,827 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:30:49,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:30:50,988 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:30:55,989 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:31:00,990 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:31:04,827 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:31:04,827 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:31:04,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:31:05,998 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:31:10,999 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:31:16,000 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:31:19,827 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:31:19,828 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:31:19,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:31:21,004 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:31:26,005 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:31:31,005 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:31:34,827 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:31:34,828 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:31:34,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:31:36,030 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:31:41,031 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:31:46,032 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:31:49,827 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:31:49,828 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:31:49,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:31:51,037 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:31:56,038 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:32:01,039 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:32:04,828 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:32:04,828 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:32:04,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:32:06,080 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:32:11,081 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:32:16,082 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:32:19,828 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:32:19,828 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:32:19,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:32:22,033 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:32:27,033 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:32:29,439 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: resume
+2024-04-30 16:32:29,439 INFO    HandlerThread:19189 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-04-30 16:32:29,439 INFO    HandlerThread:19189 [system_monitor.py:start():194] Starting system monitor
+2024-04-30 16:32:29,439 INFO    SystemMonitor:19189 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-30 16:32:29,439 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started cpu monitoring
+2024-04-30 16:32:29,439 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started disk monitoring
+2024-04-30 16:32:29,439 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started gpu monitoring
+2024-04-30 16:32:29,440 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started memory monitoring
+2024-04-30 16:32:29,441 INFO    SystemMonitor:19189 [interfaces.py:start():190] Started network monitoring
+2024-04-30 16:32:31,053 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:32:32,049 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:32:33,055 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:32:34,828 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:32:34,828 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:32:34,830 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:32:35,059 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:32:37,049 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:32:37,062 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:32:39,066 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:32:41,068 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:32:42,051 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:32:43,072 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:32:45,074 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:32:47,052 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:32:47,076 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:32:49,080 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:32:49,828 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:32:49,828 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:32:49,830 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:32:51,083 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:32:52,081 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:32:53,085 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:32:55,089 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:32:57,090 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:32:57,092 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:32:59,094 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:33:01,098 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:33:02,093 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:33:03,102 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:33:04,828 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:33:04,828 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:33:04,830 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:33:05,107 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:33:06,559 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: pause
+2024-04-30 16:33:06,559 INFO    HandlerThread:19189 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-04-30 16:33:06,559 INFO    HandlerThread:19189 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-30 16:33:06,559 DEBUG   SystemMonitor:19189 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-30 16:33:06,560 DEBUG   SystemMonitor:19189 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-30 16:33:06,560 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-30 16:33:06,560 DEBUG   SystemMonitor:19189 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-30 16:33:06,560 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined disk monitor
+2024-04-30 16:33:06,631 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-30 16:33:06,631 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined memory monitor
+2024-04-30 16:33:06,632 INFO    HandlerThread:19189 [interfaces.py:finish():202] Joined network monitor
+2024-04-30 16:33:06,632 DEBUG   SenderThread:19189 [sender.py:send():379] send: stats
+2024-04-30 16:33:07,110 INFO    Thread-30 :19189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240430_162618-rsigpuo5/files/output.log
+2024-04-30 16:33:07,633 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:33:12,634 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:33:17,635 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:33:19,828 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:33:19,829 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:33:19,830 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:33:23,014 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:33:28,015 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:33:33,016 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:33:34,828 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:33:34,829 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:33:34,869 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:33:39,007 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:33:44,007 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:33:49,009 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:33:49,828 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:33:49,829 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:33:49,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:33:54,205 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:33:59,206 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:34:04,206 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:34:04,829 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:34:04,829 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:34:04,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:34:10,098 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:34:15,099 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:34:19,829 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:34:19,829 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:34:19,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:34:20,986 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:34:25,986 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:34:30,987 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:34:34,829 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:34:34,830 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:34:34,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:34:36,104 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:34:41,105 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:34:46,106 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:34:49,830 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:34:49,830 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:34:49,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:34:52,080 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:34:57,081 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:35:02,082 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:35:04,830 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:35:04,830 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:35:04,877 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:35:08,075 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:35:13,076 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:35:18,076 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:35:19,830 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:35:19,830 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:35:19,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:35:24,021 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:35:29,022 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:35:34,023 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:35:34,830 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:35:34,830 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:35:34,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:35:39,089 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:35:44,090 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:35:49,091 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:35:49,830 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:35:49,831 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:35:49,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:35:55,019 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:36:00,019 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:36:04,830 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:36:04,831 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:36:04,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:36:06,009 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:36:11,009 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:36:16,010 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:36:19,830 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:36:19,830 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:36:19,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:36:21,099 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:36:26,099 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:36:31,101 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:36:34,831 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:36:34,831 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:36:34,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:36:37,089 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:36:42,090 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:36:47,092 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:36:49,831 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:36:49,831 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:36:49,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:36:53,054 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:36:58,055 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:37:03,055 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:37:04,831 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:37:04,831 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:37:04,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:37:09,042 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:37:14,043 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:37:19,044 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:37:19,831 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:37:19,831 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:37:19,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:37:24,110 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:37:29,111 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:37:34,111 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:37:34,831 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:37:34,832 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:37:34,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:37:40,098 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:37:45,099 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:37:49,832 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:37:49,832 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:37:49,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:37:51,094 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:37:56,095 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:38:01,096 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:38:04,832 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:38:04,832 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:38:04,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:38:07,092 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:38:12,092 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:38:17,093 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:38:19,833 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:38:19,833 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:38:19,833 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:38:22,912 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:38:27,912 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:38:32,913 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:38:34,833 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:38:34,833 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:38:34,873 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:38:38,054 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:38:43,055 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:38:48,056 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:38:49,833 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:38:49,833 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:38:49,834 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:38:53,289 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:38:58,289 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:39:03,291 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:39:04,833 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:39:04,833 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:39:04,833 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:39:09,069 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:39:14,069 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:39:19,070 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:39:19,833 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:39:19,834 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:39:19,834 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:39:25,013 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:39:30,014 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:39:34,833 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:39:34,834 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:39:34,877 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:39:35,054 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:39:40,055 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:39:45,055 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:39:49,834 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:39:49,834 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:39:49,877 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:39:51,034 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:39:56,036 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:40:01,036 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:40:04,834 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:40:04,834 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:40:04,877 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:40:07,002 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:40:12,003 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:40:17,004 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:40:19,834 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:40:19,834 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:40:19,835 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:40:22,038 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:40:27,038 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:40:32,039 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:40:34,834 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:40:34,834 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:40:34,834 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:40:37,069 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:40:42,070 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:40:47,071 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:40:49,834 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:40:49,834 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:40:49,877 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:40:52,074 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:40:57,075 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:41:02,076 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:41:04,834 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:41:04,834 DEBUG   SenderThread:19189 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:41:04,881 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:41:07,089 DEBUG   HandlerThread:19189 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:41:08,775 INFO    MainThread:19189 [internal.py:handle_exit():76] Internal process exited
+2024-04-30 16:41:08,775 INFO    MainThread:19189 [internal.py:handle_exit():76] Internal process exited
+2024-04-30 16:41:08,812 WARNING StreamThr :19189 [internal.py:is_dead():414] Internal process exiting, parent pid 19053 disappeared
+2024-04-30 16:41:08,813 ERROR   StreamThr :19189 [internal.py:wandb_internal():152] Internal process shutdown.

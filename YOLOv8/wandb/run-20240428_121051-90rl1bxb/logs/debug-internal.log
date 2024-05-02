@@ -1,0 +1,1322 @@
+2024-04-28 12:10:51,631 INFO    StreamThr :4250 [internal.py:wandb_internal():86] W&B internal server running at pid: 4250, started at: 2024-04-28 12:10:51.629932
+2024-04-28 12:10:51,631 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status
+2024-04-28 12:10:51,633 INFO    WriterThread:4250 [datastore.py:open_for_write():87] open: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/run-90rl1bxb.wandb
+2024-04-28 12:10:51,639 DEBUG   SenderThread:4250 [sender.py:send():379] send: header
+2024-04-28 12:10:51,639 DEBUG   SenderThread:4250 [sender.py:send():379] send: run
+2024-04-28 12:10:52,070 INFO    SenderThread:4250 [dir_watcher.py:__init__():211] watching files in: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files
+2024-04-28 12:10:52,070 INFO    SenderThread:4250 [sender.py:_start_run_threads():1124] run started: 90rl1bxb with start time 1714299051.630418
+2024-04-28 12:10:52,099 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: check_version
+2024-04-28 12:10:52,099 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: check_version
+2024-04-28 12:10:52,189 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: run_start
+2024-04-28 12:10:52,190 DEBUG   HandlerThread:4250 [system_info.py:__init__():26] System info init
+2024-04-28 12:10:52,195 DEBUG   HandlerThread:4250 [system_info.py:__init__():41] System info init done
+2024-04-28 12:10:52,195 INFO    HandlerThread:4250 [system_monitor.py:start():194] Starting system monitor
+2024-04-28 12:10:52,195 INFO    SystemMonitor:4250 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-28 12:10:52,195 INFO    HandlerThread:4250 [system_monitor.py:probe():214] Collecting system info
+2024-04-28 12:10:52,195 INFO    SystemMonitor:4250 [interfaces.py:start():190] Started cpu monitoring
+2024-04-28 12:10:52,197 INFO    SystemMonitor:4250 [interfaces.py:start():190] Started disk monitoring
+2024-04-28 12:10:52,197 INFO    SystemMonitor:4250 [interfaces.py:start():190] Started gpu monitoring
+2024-04-28 12:10:52,197 INFO    SystemMonitor:4250 [interfaces.py:start():190] Started memory monitoring
+2024-04-28 12:10:52,202 INFO    SystemMonitor:4250 [interfaces.py:start():190] Started network monitoring
+2024-04-28 12:10:52,239 DEBUG   HandlerThread:4250 [system_info.py:probe():150] Probing system
+2024-04-28 12:10:52,240 DEBUG   HandlerThread:4250 [gitlib.py:_init_repo():56] git repository is invalid
+2024-04-28 12:10:52,240 DEBUG   HandlerThread:4250 [system_info.py:probe():198] Probing system done
+2024-04-28 12:10:52,240 DEBUG   HandlerThread:4250 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-105-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-04-28T10:10:52.239812', 'startedAt': '2024-04-28T10:10:51.587048', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'host': 'clab20', 'username': 'pederu', 'executable': '/bin/python', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 3407.8002083333336, 'min': 3000.0, 'max': 4700.0}, 'cpu_freq_per_core': [{'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 4700.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 4700.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 4700.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 4288.671, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4700.0}], 'disk': {'/': {'total': 97.87200164794922, 'used': 48.974578857421875}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 61.94272994995117}}
+2024-04-28 12:10:52,240 INFO    HandlerThread:4250 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-28 12:10:52,240 INFO    HandlerThread:4250 [system_monitor.py:probe():227] Publishing system info
+2024-04-28 12:10:52,246 INFO    HandlerThread:4250 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-28 12:10:52,246 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:10:52,246 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-28 12:10:52,564 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-28 12:10:52,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:10:52,565 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: python_packages
+2024-04-28 12:10:52,566 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:10:52,569 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:10:52,755 DEBUG   SenderThread:4250 [sender.py:send():379] send: telemetry
+2024-04-28 12:10:52,863 INFO    wandb-upload_0:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/ijpeg8vm-wandb-metadata.json
+2024-04-28 12:10:53,073 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:10:53,073 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/requirements.txt
+2024-04-28 12:10:53,073 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-metadata.json
+2024-04-28 12:10:55,077 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:10:56,657 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:10:57,080 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:10:59,082 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:01,083 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:01,681 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:11:03,085 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:05,099 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:06,843 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:11:07,101 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:07,460 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:07,460 DEBUG   SenderThread:4250 [sender.py:send():379] send: telemetry
+2024-04-28 12:11:07,460 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:07,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:11:07,565 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:11:07,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:11:11,487 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:12,075 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:11:14,717 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:14,841 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:11:14,841 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/labels_1_d4bb7d4d1dd59b46c264.jpg with policy now
+2024-04-28 12:11:14,841 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:14,999 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:11:14,999 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/train_batch0_1_5c6c35b492cac58d6fa6.jpg with policy now
+2024-04-28 12:11:15,000 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:15,259 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:11:15,259 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/train_batch1_1_674b3c081b229e9c81f5.jpg with policy now
+2024-04-28 12:11:15,259 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:15,505 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:11:15,505 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:15,505 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/train_batch2_1_13c9b6cfe25be8ffcecd.jpg with policy now
+2024-04-28 12:11:15,551 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:15,653 INFO    wandb-upload_0:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/iykecd5u-media/images/labels_1_d4bb7d4d1dd59b46c264.jpg
+2024-04-28 12:11:15,722 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/train_batch0_1_5c6c35b492cac58d6fa6.jpg
+2024-04-28 12:11:15,723 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/train_batch1_1_674b3c081b229e9c81f5.jpg
+2024-04-28 12:11:15,725 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/train_batch2_1_13c9b6cfe25be8ffcecd.jpg
+2024-04-28 12:11:15,725 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/labels_1_d4bb7d4d1dd59b46c264.jpg
+2024-04-28 12:11:15,725 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images
+2024-04-28 12:11:15,726 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media
+2024-04-28 12:11:16,159 INFO    wandb-upload_1:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/us74fgkd-media/images/train_batch0_1_5c6c35b492cac58d6fa6.jpg
+2024-04-28 12:11:16,449 INFO    wandb-upload_2:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/yh5o65q7-media/images/train_batch1_1_674b3c081b229e9c81f5.jpg
+2024-04-28 12:11:16,516 INFO    wandb-upload_3:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/t2f2ei0n-media/images/train_batch2_1_13c9b6cfe25be8ffcecd.jpg
+2024-04-28 12:11:16,726 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:16,750 INFO    wandb-upload_0:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/tv1inejb-media/images/labels_1_d4bb7d4d1dd59b46c264.jpg
+2024-04-28 12:11:17,189 INFO    wandb-upload_1:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/ayf4377d-media/images/train_batch0_1_5c6c35b492cac58d6fa6.jpg
+2024-04-28 12:11:17,193 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:11:17,510 INFO    wandb-upload_2:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/yid6p4sn-media/images/train_batch1_1_674b3c081b229e9c81f5.jpg
+2024-04-28 12:11:17,586 INFO    wandb-upload_3:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/apitjn8n-media/images/train_batch2_1_13c9b6cfe25be8ffcecd.jpg
+2024-04-28 12:11:17,729 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:18,734 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:20,745 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:22,267 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:11:22,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:11:22,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:11:22,566 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:11:22,763 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:22,763 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/config.yaml
+2024-04-28 12:11:23,995 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:23,996 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:23,996 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:11:26,904 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:11:26,914 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:26,962 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:11:27,963 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:11:30,444 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:30,444 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:11:32,963 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:11:33,693 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:35,673 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:37,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:11:37,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:11:37,565 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:11:37,680 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:38,002 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:11:39,692 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:41,698 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:43,110 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:11:43,424 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:43,424 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:43,425 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:11:43,426 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:11:43,438 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:11:43,707 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:43,708 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:11:47,264 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:48,894 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:11:50,482 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:50,493 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:51,486 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:52,202 DEBUG   SystemMonitor:4250 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-28 12:11:52,203 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:11:52,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:11:52,565 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:11:52,566 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:11:53,493 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:53,991 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:11:55,504 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:57,511 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:59,035 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:11:59,037 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:59,037 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:11:59,037 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:11:59,037 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:11:59,050 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:11:59,518 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:11:59,518 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:12:02,904 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:04,499 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:12:06,145 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:12:07,141 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:07,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:12:07,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:12:07,566 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:12:09,148 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:09,584 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:12:11,155 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:13,160 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:14,642 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:12:14,761 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:12:14,761 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:12:14,761 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:12:14,764 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:12:14,777 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:12:15,168 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:15,169 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:12:18,617 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:20,220 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:12:21,870 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:12:22,203 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:12:22,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:12:22,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:12:22,566 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:12:22,862 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:23,866 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:24,870 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:25,374 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:12:26,874 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:28,881 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:30,333 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:12:30,334 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:12:30,334 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:12:30,334 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:12:30,340 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:12:30,489 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:12:30,884 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:30,884 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:12:32,575 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:34,206 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:34,211 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:12:35,208 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:35,503 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:12:37,212 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:37,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:12:37,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:12:37,565 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:12:39,215 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:40,596 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:12:41,219 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:42,716 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:12:42,717 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:12:42,717 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:12:42,717 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:12:42,721 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:12:43,224 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:43,224 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:12:44,962 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:46,193 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:12:46,659 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:12:47,658 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:49,662 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:51,336 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:12:51,665 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:52,204 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:12:52,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:12:52,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:12:52,566 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:12:53,669 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:55,165 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:12:55,166 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:12:55,166 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:12:55,166 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:12:55,171 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:12:55,674 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:55,675 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:12:56,650 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:12:57,448 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:12:57,449 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:12:59,452 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:01,455 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:01,794 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:13:03,459 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:05,462 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:05,842 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:13:05,843 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:13:05,843 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:13:05,844 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:13:05,851 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:13:06,464 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:13:07,317 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:13:07,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:13:07,565 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:13:07,566 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:13:08,129 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:10,148 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:13:11,145 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:12,147 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:12,345 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:13:13,149 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:15,152 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:17,156 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:17,509 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:13:18,518 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:13:18,519 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:13:18,519 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:13:18,520 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:13:18,522 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:13:19,159 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:19,159 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:13:20,831 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:22,204 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:13:22,486 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:22,491 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:13:22,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:13:22,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:13:22,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:13:22,605 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:13:24,490 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:25,492 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:27,496 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:27,669 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:13:29,499 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:30,827 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:13:30,827 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:13:30,828 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:13:30,828 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:13:30,833 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:13:33,060 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:33,061 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:13:33,287 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:13:34,692 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:13:36,693 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:37,603 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:13:37,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:13:37,604 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:13:37,695 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:38,301 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:13:39,698 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:41,702 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:43,137 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:13:43,138 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:13:43,140 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:13:43,140 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:13:43,147 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:13:43,441 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:13:43,707 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:43,707 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:13:45,320 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:46,947 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:13:47,946 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:48,572 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:13:48,947 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:49,949 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:51,953 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:52,205 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:13:52,603 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:13:52,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:13:52,604 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:13:53,611 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:13:53,956 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:55,326 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:13:55,326 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:13:55,326 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:13:55,327 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:13:55,331 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:13:57,565 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:57,565 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:13:58,779 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:13:59,175 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:13:59,177 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:01,178 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:02,180 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:03,933 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:14:04,183 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:06,187 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:07,399 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:07,399 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:07,400 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:14:07,400 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:14:07,408 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:14:07,603 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:14:07,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:14:07,604 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:14:09,583 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:09,583 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:14:09,836 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:14:11,262 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:12,261 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:14,265 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:14,875 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:14:16,268 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:18,272 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:19,699 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:19,700 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:19,700 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:14:19,700 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:14:19,704 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:14:19,997 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:14:20,275 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:20,275 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:14:22,031 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:22,206 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:14:22,603 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:14:22,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:14:22,604 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:14:23,663 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:23,663 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:24,665 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:25,117 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:14:25,668 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:27,672 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:29,675 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:30,202 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:14:31,678 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:32,151 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:32,151 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:32,151 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:14:32,152 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:14:32,155 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:14:32,681 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:14:34,398 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:34,402 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:35,297 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:14:35,400 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:36,401 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:37,603 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:14:37,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:14:37,604 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:14:38,405 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:40,372 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:14:40,410 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:42,413 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:42,866 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:42,867 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:42,867 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:14:42,867 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:14:42,871 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:14:43,415 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:14:45,066 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:46,316 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:14:46,682 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:47,681 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:49,685 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:51,412 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:14:51,688 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:52,206 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:14:52,603 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:14:52,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:14:52,604 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:14:53,692 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:55,156 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:55,156 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:55,156 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:14:55,157 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:14:55,161 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:14:55,696 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:55,696 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:14:56,587 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:14:57,371 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:57,374 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:14:58,373 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:14:59,375 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:00,376 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:01,712 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:15:02,380 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:04,395 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:05,815 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:05,816 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:05,816 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:15:05,816 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:15:05,820 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:15:06,399 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:06,399 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:15:07,268 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:15:07,603 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:15:07,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:15:07,604 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:15:08,019 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:09,644 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:10,643 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:11,644 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:12,344 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:15:12,646 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:14,649 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:16,653 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:17,427 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:15:18,089 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:18,089 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:18,089 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:15:18,090 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:15:18,097 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:15:18,656 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:18,656 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:15:20,312 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:21,927 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:22,207 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:15:22,469 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:15:22,603 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:15:22,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:15:22,605 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:15:23,926 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:24,928 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:26,931 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:27,574 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:15:28,934 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:30,432 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:30,432 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:30,440 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:15:30,440 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:15:30,446 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:15:30,939 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:30,939 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:15:32,818 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:32,895 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:15:34,461 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:35,460 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:36,461 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:37,603 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:15:37,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:15:37,605 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:15:38,071 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:15:38,465 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:40,468 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:42,471 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:42,908 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:42,908 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:42,908 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:15:42,909 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:15:42,912 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:15:43,200 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:15:45,079 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:15:46,728 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:46,729 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:47,730 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:48,209 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:15:48,731 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:50,734 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:52,207 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:15:52,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:15:52,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:15:52,605 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:15:52,737 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:53,355 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:15:54,740 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:55,295 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:55,295 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:55,295 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:15:55,296 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:15:55,300 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:15:55,743 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:15:57,543 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:15:57,543 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:58,439 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:15:58,545 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:15:59,546 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:00,548 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:02,551 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:03,538 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:16:04,554 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:06,029 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:16:06,029 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:16:06,030 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:16:06,030 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:16:06,033 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:16:06,556 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:06,557 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:16:07,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:16:07,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:16:07,605 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:16:08,235 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:08,235 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:16:08,595 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:16:09,237 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:10,238 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:12,241 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:13,706 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:16:14,244 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:16,247 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:16,737 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:16:16,737 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:16:16,737 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:16:16,738 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:16:16,741 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:16:17,248 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:16:19,160 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:16:19,884 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:19,892 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:16:21,892 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:22,208 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:16:22,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:16:22,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:16:22,605 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:16:22,894 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:24,287 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:16:24,903 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:26,908 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:28,403 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:16:28,403 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:16:28,403 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:16:28,405 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:16:28,413 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:16:28,916 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:28,916 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:16:29,824 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:16:32,356 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:34,824 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:16:35,595 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:16:36,582 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:37,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:16:37,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:16:37,605 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:16:38,589 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:39,848 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:16:40,595 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:42,604 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:44,189 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:16:44,189 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:16:44,189 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:16:44,190 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:16:44,198 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:16:44,612 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:44,612 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:16:45,613 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:16:48,027 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:48,032 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:16:50,034 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:50,746 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:16:52,044 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:52,208 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:16:52,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:16:52,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:16:52,606 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:16:54,050 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:55,853 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:16:56,062 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:16:56,523 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:16:56,523 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:16:56,523 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:16:56,524 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:16:56,533 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:16:57,065 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:17:00,374 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:00,380 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:00,930 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:17:02,380 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:04,404 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:06,045 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:17:06,412 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:07,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:17:07,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:17:07,607 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:17:08,419 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:08,897 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:08,898 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:08,898 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:17:08,899 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:17:08,910 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:17:09,423 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:17:11,354 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:17:12,732 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:15,954 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:16,482 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:17:16,940 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:17,943 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:18,946 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:20,954 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:21,547 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:17:22,209 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:17:22,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:17:22,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:17:22,606 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:17:22,963 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:24,400 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:24,400 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:24,400 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:17:24,401 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:17:24,411 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:17:24,970 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:24,971 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:17:26,851 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:17:28,241 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:28,246 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:30,248 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:31,253 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:31,870 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:17:33,256 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:35,259 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:36,684 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:36,684 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:36,684 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:17:36,685 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:17:36,690 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:17:36,985 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:17:37,262 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:37,262 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:17:37,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:17:37,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:17:37,605 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:17:38,893 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:40,520 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:42,144 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:17:42,522 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:44,525 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:46,528 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:47,146 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:17:48,536 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:49,079 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:49,080 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:49,080 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:17:49,081 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:17:49,085 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:17:49,538 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:17:51,311 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:51,313 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:52,200 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:17:52,210 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:17:52,312 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:52,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:17:52,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:17:52,605 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:17:53,314 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:55,317 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:57,247 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:17:57,325 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:59,328 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:17:59,716 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:59,717 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:17:59,717 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:17:59,718 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:17:59,722 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:18:01,940 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:01,940 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:18:01,941 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:18:02,305 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:18:02,942 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:03,943 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:04,945 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:05,946 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:07,379 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:18:07,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:18:07,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:18:07,606 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:18:07,950 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:09,953 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:10,417 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:18:10,418 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:18:10,418 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:18:10,418 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:18:10,422 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:18:10,954 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:18:12,619 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:12,619 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:18:12,731 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:18:13,620 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:14,624 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:15,628 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:17,636 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:17,886 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:18:19,642 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:21,059 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:18:21,059 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:18:21,059 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:18:21,060 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:18:21,071 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:18:21,650 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:21,650 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:18:22,210 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:18:22,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:18:22,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:18:22,606 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:18:23,791 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:18:24,893 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:28,136 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:18:28,859 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:18:30,129 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:31,133 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:32,136 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:33,997 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:18:34,144 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:36,150 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:36,668 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:18:36,669 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:18:36,669 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:18:36,670 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:18:36,677 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:18:37,156 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:18:37,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:18:37,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:18:37,606 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:18:40,532 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:40,823 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:18:43,765 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:43,775 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:18:44,768 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:45,932 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:18:46,773 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:48,781 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:50,787 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:51,006 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:18:52,211 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:18:52,234 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:18:52,234 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:18:52,234 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:18:52,235 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:18:52,243 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:18:52,604 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:18:52,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:18:52,606 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:18:52,793 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:52,793 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:18:56,170 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:18:56,858 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:18:59,464 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:01,464 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:02,012 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:19:03,474 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:05,481 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:07,126 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:19:07,488 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:07,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:19:07,606 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:19:07,606 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:19:08,022 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:08,023 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:08,023 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:19:08,024 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:19:08,041 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:19:08,491 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:19:11,807 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:12,420 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:19:15,027 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:17,028 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:17,601 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:19:19,034 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:21,042 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:22,211 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:19:22,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:19:22,606 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:19:22,608 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:19:22,608 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:19:23,050 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:23,286 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:23,286 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:23,286 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:19:23,287 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:19:23,295 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:19:27,069 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:27,069 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:19:27,075 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:27,758 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:19:29,077 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:31,086 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:32,820 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:19:33,102 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:34,961 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:34,962 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:34,962 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:19:34,963 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:19:34,966 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:19:35,107 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:35,107 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:19:37,145 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:37,146 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:37,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:19:37,606 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:19:37,606 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:19:38,295 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:19:39,148 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:41,151 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:43,155 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:43,296 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:19:45,159 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:45,654 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:45,655 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:45,655 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:19:45,656 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:19:45,660 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:19:46,162 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:19:47,852 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:49,089 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:19:49,536 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:49,655 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:19:49,655 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/train_batch1840_41_c9a3df18812bdfb74c2b.jpg with policy now
+2024-04-28 12:19:49,656 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:49,779 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:19:49,780 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/train_batch1841_41_c671bd11ab7138e3acfe.jpg with policy now
+2024-04-28 12:19:49,780 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:49,864 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:19:49,864 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:49,864 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/train_batch1842_41_fc4945d497a93df1c50b.jpg with policy now
+2024-04-28 12:19:50,528 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/train_batch1840_41_c9a3df18812bdfb74c2b.jpg
+2024-04-28 12:19:50,528 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/train_batch1842_41_fc4945d497a93df1c50b.jpg
+2024-04-28 12:19:50,529 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/train_batch1841_41_c671bd11ab7138e3acfe.jpg
+2024-04-28 12:19:50,529 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images
+2024-04-28 12:19:50,724 INFO    wandb-upload_0:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/cm7eswcd-media/images/train_batch1840_41_c9a3df18812bdfb74c2b.jpg
+2024-04-28 12:19:50,726 INFO    wandb-upload_2:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/iuavw7l1-media/images/train_batch1841_41_c671bd11ab7138e3acfe.jpg
+2024-04-28 12:19:50,843 INFO    wandb-upload_1:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/t9wipdg2-media/images/train_batch1842_41_fc4945d497a93df1c50b.jpg
+2024-04-28 12:19:51,529 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:51,748 INFO    wandb-upload_3:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/8dzm6329-media/images/train_batch1840_41_c9a3df18812bdfb74c2b.jpg
+2024-04-28 12:19:51,768 INFO    wandb-upload_0:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/5h4og0sk-media/images/train_batch1841_41_c671bd11ab7138e3acfe.jpg
+2024-04-28 12:19:52,212 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:19:52,531 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:52,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:19:52,606 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:19:52,607 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:19:52,667 INFO    wandb-upload_1:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/timlwtbs-media/images/train_batch1842_41_fc4945d497a93df1c50b.jpg
+2024-04-28 12:19:54,211 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:19:54,535 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:56,538 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:57,363 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:57,364 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:57,364 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:19:57,365 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:19:57,368 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:19:57,540 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:19:59,695 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:19:59,699 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:19:59,787 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:20:00,701 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:02,704 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:04,707 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:04,866 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:20:06,711 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:07,229 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:20:07,229 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:20:07,229 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:20:07,230 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:20:07,234 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:20:07,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:20:07,606 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:20:07,606 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:20:07,714 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:20:09,566 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:10,845 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:20:11,219 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:11,220 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:20:12,221 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:13,223 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:14,224 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:15,897 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:20:16,228 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:18,237 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:18,754 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:20:18,754 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:20:18,754 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:20:18,755 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:20:18,767 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:20:19,240 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:20:21,150 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:20:22,212 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:20:22,548 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:22,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:20:22,606 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:20:22,606 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:20:25,784 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:25,790 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:20:26,272 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:20:26,787 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:28,794 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:30,802 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:31,399 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:20:32,810 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:33,295 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:20:33,296 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:20:33,301 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:20:33,301 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:20:33,314 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:20:33,814 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:20:36,694 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:20:37,095 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:37,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:20:37,606 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:20:37,606 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:20:40,328 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:20:41,320 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:41,784 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:20:43,326 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:45,334 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:46,918 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:20:47,341 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:47,847 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:20:47,847 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:20:47,847 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:20:47,849 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:20:47,857 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:20:48,345 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:20:51,638 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:52,213 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:20:52,214 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:20:52,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:20:52,606 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:20:52,606 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:20:54,865 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:20:57,284 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:20:57,865 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:20:59,873 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:01,884 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:02,284 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:21:02,391 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:02,391 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:02,391 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:21:02,392 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:21:02,400 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:21:02,888 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:21:06,181 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:06,188 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:07,184 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:07,315 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:21:07,605 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:21:07,606 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:21:07,608 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:21:08,186 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:10,197 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:12,206 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:12,469 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:21:13,707 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:13,707 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:13,707 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:21:13,708 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:21:13,731 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:21:14,217 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:14,217 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:21:17,656 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:18,105 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:21:20,908 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:21,903 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:22,213 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:21:22,606 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:21:22,606 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:21:22,607 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:21:23,171 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:21:23,910 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:25,919 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:27,926 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:28,320 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:21:28,426 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:28,427 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:28,427 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:21:28,428 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:21:28,440 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:21:28,930 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:21:32,207 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:32,214 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:33,211 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:33,331 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:21:34,212 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:36,215 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:37,606 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:21:37,606 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:21:37,607 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:21:38,218 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:38,355 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:21:39,768 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:39,768 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:39,769 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:21:39,769 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:21:39,774 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:21:40,221 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:40,222 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:21:41,955 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:41,956 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:43,004 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:44,071 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:21:44,412 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:45,463 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:47,839 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:48,841 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:49,369 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:21:49,842 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:50,645 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:50,673 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:21:50,673 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/val_batch0_labels_50_94950b15302f97b86bf1.jpg with policy now
+2024-04-28 12:21:50,673 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:50,721 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:50,721 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:21:50,724 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/val_batch0_pred_50_fe5aa2926ff341611541.jpg with policy now
+2024-04-28 12:21:50,798 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:50,799 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:21:50,800 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/val_batch1_labels_50_6b670c3adb5eb3fa2166.jpg with policy now
+2024-04-28 12:21:50,829 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:21:50,829 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/val_batch1_pred_50_23c3b52840494de4c579.jpg with policy now
+2024-04-28 12:21:50,829 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:50,865 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:50,865 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/val_batch0_pred_50_fe5aa2926ff341611541.jpg
+2024-04-28 12:21:50,868 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/val_batch1_pred_50_23c3b52840494de4c579.jpg
+2024-04-28 12:21:50,868 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/val_batch1_labels_50_6b670c3adb5eb3fa2166.jpg
+2024-04-28 12:21:50,868 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/val_batch0_labels_50_94950b15302f97b86bf1.jpg
+2024-04-28 12:21:50,870 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images
+2024-04-28 12:21:50,899 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:21:50,900 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/val_batch2_labels_50_d82119fd66ea07fe9905.jpg with policy now
+2024-04-28 12:21:50,900 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:50,982 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:21:50,982 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/val_batch2_pred_50_ee45c0e5cdaeaa4299e0.jpg with policy now
+2024-04-28 12:21:50,983 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:51,114 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:51,115 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:21:51,115 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/PR_curve_50_dc3f03409893a7d1ffdc.png with policy now
+2024-04-28 12:21:51,256 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:21:51,256 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/F1_curve_50_dd1e1451d0d51fb2e8e8.png with policy now
+2024-04-28 12:21:51,256 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:51,342 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:21:51,343 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/P_curve_50_5c39e6f48122dc1eb5b1.png with policy now
+2024-04-28 12:21:51,343 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:51,430 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:51,430 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:21:51,434 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/R_curve_50_46aa52c0cccb9ae31ae7.png with policy now
+2024-04-28 12:21:51,449 INFO    wandb-upload_3:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/efnm48dn-media/images/val_batch0_labels_50_94950b15302f97b86bf1.jpg
+2024-04-28 12:21:51,538 INFO    wandb-upload_0:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/85ngc26l-media/images/val_batch0_pred_50_fe5aa2926ff341611541.jpg
+2024-04-28 12:21:51,556 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:51,556 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:21:51,557 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/confusion_matrix_normalized_50_b43eb2fc5d267766668e.png with policy now
+2024-04-28 12:21:51,624 INFO    wandb-upload_1:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/nf9nnzsd-media/images/val_batch1_pred_50_23c3b52840494de4c579.jpg
+2024-04-28 12:21:51,650 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:51,650 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:21:51,650 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/confusion_matrix_50_664d8d9421a8543008c6.png with policy now
+2024-04-28 12:21:51,754 INFO    wandb-upload_2:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/06r6o4zk-media/images/val_batch1_labels_50_6b670c3adb5eb3fa2166.jpg
+2024-04-28 12:21:51,827 INFO    wandb-upload_4:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/twypp5uv-media/images/val_batch2_labels_50_d82119fd66ea07fe9905.jpg
+2024-04-28 12:21:51,870 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:21:51,870 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/val_batch2_pred_50_ee45c0e5cdaeaa4299e0.jpg
+2024-04-28 12:21:51,870 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/R_curve_50_46aa52c0cccb9ae31ae7.png
+2024-04-28 12:21:51,870 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/confusion_matrix_50_664d8d9421a8543008c6.png
+2024-04-28 12:21:51,870 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/F1_curve_50_dd1e1451d0d51fb2e8e8.png
+2024-04-28 12:21:51,870 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/P_curve_50_5c39e6f48122dc1eb5b1.png
+2024-04-28 12:21:51,871 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/confusion_matrix_normalized_50_b43eb2fc5d267766668e.png
+2024-04-28 12:21:51,871 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/val_batch2_labels_50_d82119fd66ea07fe9905.jpg
+2024-04-28 12:21:51,871 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/PR_curve_50_dc3f03409893a7d1ffdc.png
+2024-04-28 12:21:51,871 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images
+2024-04-28 12:21:51,909 INFO    wandb-upload_5:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/fattenkd-media/images/val_batch2_pred_50_ee45c0e5cdaeaa4299e0.jpg
+2024-04-28 12:21:51,973 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:21:51,973 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/images/results_50_1ef34ce70f1e79cc140a.png with policy now
+2024-04-28 12:21:51,974 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:52,109 INFO    wandb-upload_7:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/vavj7l66-media/images/F1_curve_50_dd1e1451d0d51fb2e8e8.png
+2024-04-28 12:21:52,115 INFO    wandb-upload_6:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/ct14cezn-media/images/PR_curve_50_dc3f03409893a7d1ffdc.png
+2024-04-28 12:21:52,161 INFO    wandb-upload_3:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/e6kqk2rl-media/images/R_curve_50_46aa52c0cccb9ae31ae7.png
+2024-04-28 12:21:52,214 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:21:52,289 INFO    wandb-upload_8:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/lxeny6vf-media/images/P_curve_50_5c39e6f48122dc1eb5b1.png
+2024-04-28 12:21:52,300 INFO    wandb-upload_0:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/ddqmml22-media/images/confusion_matrix_normalized_50_b43eb2fc5d267766668e.png
+2024-04-28 12:21:52,407 INFO    wandb-upload_1:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/lsz618mx-media/images/confusion_matrix_50_664d8d9421a8543008c6.png
+2024-04-28 12:21:52,606 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:21:52,607 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 12:21:52,608 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 12:21:52,618 INFO    wandb-upload_2:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/oi7nep5q-media/images/val_batch0_labels_50_94950b15302f97b86bf1.jpg
+2024-04-28 12:21:52,670 INFO    wandb-upload_4:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/3paqg3s8-media/images/val_batch0_pred_50_fe5aa2926ff341611541.jpg
+2024-04-28 12:21:52,845 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: log_artifact
+2024-04-28 12:21:52,873 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/results_50_1ef34ce70f1e79cc140a.png
+2024-04-28 12:21:52,873 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images
+2024-04-28 12:21:52,897 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: log_artifact
+2024-04-28 12:21:53,146 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: log_artifact
+2024-04-28 12:21:53,190 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:53,289 INFO    wandb-upload_9:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/584xo92z-media/images/val_batch2_labels_50_d82119fd66ea07fe9905.jpg
+2024-04-28 12:21:53,289 INFO    wandb-upload_5:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/bw9eippg-media/images/val_batch1_pred_50_23c3b52840494de4c579.jpg
+2024-04-28 12:21:53,290 INFO    wandb-upload_10:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/qw4c5gid-media/images/results_50_1ef34ce70f1e79cc140a.png
+2024-04-28 12:21:53,375 INFO    wandb-upload_7:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/asjo27n3-media/images/val_batch1_labels_50_6b670c3adb5eb3fa2166.jpg
+2024-04-28 12:21:53,468 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: log_artifact
+2024-04-28 12:21:53,495 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:53,520 INFO    wandb-upload_6:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/3vkzivln-media/images/val_batch2_pred_50_ee45c0e5cdaeaa4299e0.jpg
+2024-04-28 12:21:53,554 INFO    wandb-upload_0:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/clia83ni-media/images/R_curve_50_46aa52c0cccb9ae31ae7.png
+2024-04-28 12:21:53,562 INFO    wandb-upload_1:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/g92m7r3v-media/images/F1_curve_50_dd1e1451d0d51fb2e8e8.png
+2024-04-28 12:21:53,668 INFO    wandb-upload_8:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/ulqxmppb-media/images/P_curve_50_5c39e6f48122dc1eb5b1.png
+2024-04-28 12:21:53,669 INFO    wandb-upload_3:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/uc2ntekj-media/images/confusion_matrix_normalized_50_b43eb2fc5d267766668e.png
+2024-04-28 12:21:53,737 INFO    wandb-upload_2:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/994y55od-media/images/PR_curve_50_dc3f03409893a7d1ffdc.png
+2024-04-28 12:21:53,770 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: log_artifact
+2024-04-28 12:21:53,793 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:53,877 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/table/curves/Precision-Recall(B)_table_50_e59740a797c9d63bc495.table.json
+2024-04-28 12:21:53,878 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/table/curves/Precision-Confidence(B)_table_50_c7d167542cfd6deb458f.table.json
+2024-04-28 12:21:53,878 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/table/curves/F1-Confidence(B)_table_50_1a4359c6314b3ac59182.table.json
+2024-04-28 12:21:53,879 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media
+2024-04-28 12:21:53,881 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/table
+2024-04-28 12:21:53,881 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/table/curves
+2024-04-28 12:21:54,089 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: log_artifact
+2024-04-28 12:21:54,094 INFO    wandb-upload_4:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/2t4lghf6-media/images/confusion_matrix_50_664d8d9421a8543008c6.png
+2024-04-28 12:21:54,110 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 12:21:54,254 INFO    wandb-upload_9:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/v3er0req-media/images/results_50_1ef34ce70f1e79cc140a.png
+2024-04-28 12:21:54,312 INFO    wandb-upload_0:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/ryh1zc80-media/table/curves/Precision-Confidence(B)_table_50_c7d167542cfd6deb458f.table.json
+2024-04-28 12:21:54,331 INFO    wandb-upload_7:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/5pnc8sfs-media/table/curves/Precision-Recall(B)_table_50_e59740a797c9d63bc495.table.json
+2024-04-28 12:21:54,355 INFO    wandb-upload_5:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/pn1os51a-media/table/curves/F1-Confidence(B)_table_50_1a4359c6314b3ac59182.table.json
+2024-04-28 12:21:54,918 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_created():271] file/dir created: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/table/curves/Recall-Confidence(B)_table_50_acf937d225adfca6c947.table.json
+2024-04-28 12:21:54,919 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/table/curves
+2024-04-28 12:21:55,111 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-28 12:21:55,528 INFO    wandb-upload_3:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/j5kcyvlc-media/table/curves/Recall-Confidence(B)_table_50_acf937d225adfca6c947.table.json
+2024-04-28 12:21:56,123 INFO    wandb-upload_10:4250 [upload_job.py:push():89] Uploaded file /home/pederu/.local/share/wandb/artifacts/staging/tmpt2vcaz9g
+2024-04-28 12:21:56,801 INFO    SenderThread:4250 [sender.py:send_request_log_artifact():1456] logged artifact run_90rl1bxb_model - {'id': 'QXJ0aWZhY3Q6ODEzNjAyNDM3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2Nzc4NDA0MA==', 'latestArtifact': None}}
+2024-04-28 12:21:56,801 DEBUG   SenderThread:4250 [sender.py:send():379] send: config
+2024-04-28 12:21:56,801 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: log_artifact
+2024-04-28 12:21:56,801 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:21:57,840 INFO    wandb-upload_6:4250 [upload_job.py:push():89] Uploaded file /home/pederu/.local/share/wandb/artifacts/staging/tmp82wv5gxp
+2024-04-28 12:21:58,589 INFO    SenderThread:4250 [sender.py:send_request_log_artifact():1456] logged artifact run-90rl1bxb-curvesPrecisionRecallB_table - {'id': 'QXJ0aWZhY3Q6ODEzNjAyNDc0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2Nzc4NDA1NQ==', 'latestArtifact': None}}
+2024-04-28 12:21:58,589 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:21:58,589 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/table/curves/Precision-Recall(B)_table_50_e59740a797c9d63bc495.table.json with policy now
+2024-04-28 12:21:58,591 DEBUG   SenderThread:4250 [sender.py:send():379] send: config
+2024-04-28 12:21:58,591 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: log_artifact
+2024-04-28 12:21:59,132 INFO    wandb-upload_8:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/ti287abe-media/table/curves/Precision-Recall(B)_table_50_e59740a797c9d63bc495.table.json
+2024-04-28 12:21:59,602 INFO    wandb-upload_9:4250 [upload_job.py:push():89] Uploaded file /home/pederu/.local/share/wandb/artifacts/staging/tmp7ld49s6k
+2024-04-28 12:22:00,113 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-28 12:22:00,274 INFO    SenderThread:4250 [sender.py:send_request_log_artifact():1456] logged artifact run-90rl1bxb-curvesF1ConfidenceB_table - {'id': 'QXJ0aWZhY3Q6ODEzNjAyNTA5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2Nzc4NDA3NQ==', 'latestArtifact': None}}
+2024-04-28 12:22:00,274 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:22:00,274 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/table/curves/F1-Confidence(B)_table_50_1a4359c6314b3ac59182.table.json with policy now
+2024-04-28 12:22:00,275 DEBUG   SenderThread:4250 [sender.py:send():379] send: config
+2024-04-28 12:22:00,275 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: log_artifact
+2024-04-28 12:22:00,802 INFO    wandb-upload_7:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/pnr92mjx-media/table/curves/F1-Confidence(B)_table_50_1a4359c6314b3ac59182.table.json
+2024-04-28 12:22:01,274 INFO    wandb-upload_2:4250 [upload_job.py:push():89] Uploaded file /home/pederu/.local/share/wandb/artifacts/staging/tmpr4ze9ui1
+2024-04-28 12:22:01,943 INFO    SenderThread:4250 [sender.py:send_request_log_artifact():1456] logged artifact run-90rl1bxb-curvesPrecisionConfidenceB_table - {'id': 'QXJ0aWZhY3Q6ODEzNjAyNTM1', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2Nzc4NDA5MQ==', 'latestArtifact': None}}
+2024-04-28 12:22:01,943 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:22:01,944 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/table/curves/Precision-Confidence(B)_table_50_c7d167542cfd6deb458f.table.json with policy now
+2024-04-28 12:22:01,944 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:22:01,945 DEBUG   SenderThread:4250 [sender.py:send():379] send: config
+2024-04-28 12:22:01,945 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: log_artifact
+2024-04-28 12:22:02,466 INFO    wandb-upload_10:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/10ghuaaf-media/table/curves/Precision-Confidence(B)_table_50_c7d167542cfd6deb458f.table.json
+2024-04-28 12:22:02,947 INFO    wandb-upload_6:4250 [upload_job.py:push():89] Uploaded file /home/pederu/.local/share/wandb/artifacts/staging/tmp4u6mejjq
+2024-04-28 12:22:03,629 INFO    SenderThread:4250 [sender.py:send_request_log_artifact():1456] logged artifact run-90rl1bxb-curvesRecallConfidenceB_table - {'id': 'QXJ0aWZhY3Q6ODEzNjAyNjM3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2Nzc4NDE3Ng==', 'latestArtifact': None}}
+2024-04-28 12:22:03,630 DEBUG   SenderThread:4250 [sender.py:send():379] send: files
+2024-04-28 12:22:03,630 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file media/table/curves/Recall-Confidence(B)_table_50_acf937d225adfca6c947.table.json with policy now
+2024-04-28 12:22:03,631 DEBUG   SenderThread:4250 [sender.py:send():379] send: telemetry
+2024-04-28 12:22:03,631 DEBUG   SenderThread:4250 [sender.py:send():379] send: exit
+2024-04-28 12:22:03,631 INFO    SenderThread:4250 [sender.py:send_exit():586] handling exit code: 0
+2024-04-28 12:22:03,631 INFO    SenderThread:4250 [sender.py:send_exit():588] handling runtime: 661
+2024-04-28 12:22:03,634 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:22:03,634 INFO    SenderThread:4250 [sender.py:send_exit():594] send defer
+2024-04-28 12:22:03,635 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: poll_exit
+2024-04-28 12:22:03,635 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:03,635 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-28 12:22:03,636 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:03,636 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-28 12:22:03,636 INFO    SenderThread:4250 [sender.py:transition_state():614] send defer: 1
+2024-04-28 12:22:03,636 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:03,636 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-28 12:22:03,637 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:03,637 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-28 12:22:03,637 INFO    SenderThread:4250 [sender.py:transition_state():614] send defer: 2
+2024-04-28 12:22:03,637 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:03,638 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-28 12:22:03,638 INFO    HandlerThread:4250 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-28 12:22:03,638 DEBUG   SystemMonitor:4250 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-28 12:22:03,638 INFO    HandlerThread:4250 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-28 12:22:03,638 DEBUG   SystemMonitor:4250 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-28 12:22:03,639 INFO    HandlerThread:4250 [interfaces.py:finish():202] Joined disk monitor
+2024-04-28 12:22:03,685 INFO    HandlerThread:4250 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-28 12:22:03,685 INFO    HandlerThread:4250 [interfaces.py:finish():202] Joined memory monitor
+2024-04-28 12:22:03,686 INFO    HandlerThread:4250 [interfaces.py:finish():202] Joined network monitor
+2024-04-28 12:22:03,686 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:03,686 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-28 12:22:03,686 INFO    SenderThread:4250 [sender.py:transition_state():614] send defer: 3
+2024-04-28 12:22:03,686 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:03,690 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-28 12:22:03,691 DEBUG   SenderThread:4250 [sender.py:send():379] send: stats
+2024-04-28 12:22:03,691 DEBUG   SenderThread:4250 [sender.py:send():379] send: history
+2024-04-28 12:22:03,692 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 12:22:03,696 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:22:03,697 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:03,697 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-28 12:22:03,697 INFO    SenderThread:4250 [sender.py:transition_state():614] send defer: 4
+2024-04-28 12:22:03,697 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:03,697 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-28 12:22:03,697 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:03,697 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-28 12:22:03,697 INFO    SenderThread:4250 [sender.py:transition_state():614] send defer: 5
+2024-04-28 12:22:03,697 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:03,697 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-28 12:22:03,699 DEBUG   SenderThread:4250 [sender.py:send():379] send: summary
+2024-04-28 12:22:03,702 INFO    SenderThread:4250 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 12:22:03,702 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:03,703 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-28 12:22:03,703 INFO    SenderThread:4250 [sender.py:transition_state():614] send defer: 6
+2024-04-28 12:22:03,703 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:03,703 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-28 12:22:03,703 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:03,703 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-28 12:22:03,706 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 12:22:03,889 INFO    SenderThread:4250 [sender.py:transition_state():614] send defer: 7
+2024-04-28 12:22:03,889 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:03,890 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-28 12:22:03,891 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:03,891 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-28 12:22:04,114 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-28 12:22:04,160 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/config.yaml
+2024-04-28 12:22:04,161 INFO    Thread-47 :4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:22:04,182 INFO    wandb-upload_0:4250 [upload_job.py:push():131] Uploaded file /tmp/tmp6svwne8zwandb/yl33zoz6-media/table/curves/Recall-Confidence(B)_table_50_acf937d225adfca6c947.table.json
+2024-04-28 12:22:06,247 INFO    SenderThread:4250 [sender.py:transition_state():614] send defer: 8
+2024-04-28 12:22:06,247 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: poll_exit
+2024-04-28 12:22:06,247 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:06,249 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-28 12:22:06,249 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:06,253 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-28 12:22:06,253 INFO    SenderThread:4250 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-28 12:22:06,256 INFO    SenderThread:4250 [job_builder.py:_get_source_type():466] no source found
+2024-04-28 12:22:06,256 INFO    SenderThread:4250 [sender.py:transition_state():614] send defer: 9
+2024-04-28 12:22:06,256 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:06,256 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-28 12:22:06,256 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:06,256 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-28 12:22:06,256 INFO    SenderThread:4250 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-28 12:22:07,116 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-28 12:22:07,165 INFO    SenderThread:4250 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:22:07,165 INFO    SenderThread:4250 [dir_watcher.py:finish():388] scan: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files
+2024-04-28 12:22:07,167 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/config.yaml config.yaml
+2024-04-28 12:22:07,168 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-metadata.json wandb-metadata.json
+2024-04-28 12:22:07,168 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/requirements.txt requirements.txt
+2024-04-28 12:22:07,169 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log output.log
+2024-04-28 12:22:07,169 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json wandb-summary.json
+2024-04-28 12:22:07,175 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/labels_1_d4bb7d4d1dd59b46c264.jpg media/images/labels_1_d4bb7d4d1dd59b46c264.jpg
+2024-04-28 12:22:07,175 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/train_batch0_1_5c6c35b492cac58d6fa6.jpg media/images/train_batch0_1_5c6c35b492cac58d6fa6.jpg
+2024-04-28 12:22:07,175 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/train_batch1_1_674b3c081b229e9c81f5.jpg media/images/train_batch1_1_674b3c081b229e9c81f5.jpg
+2024-04-28 12:22:07,176 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/train_batch2_1_13c9b6cfe25be8ffcecd.jpg media/images/train_batch2_1_13c9b6cfe25be8ffcecd.jpg
+2024-04-28 12:22:07,176 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/train_batch1840_41_c9a3df18812bdfb74c2b.jpg media/images/train_batch1840_41_c9a3df18812bdfb74c2b.jpg
+2024-04-28 12:22:07,176 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/train_batch1841_41_c671bd11ab7138e3acfe.jpg media/images/train_batch1841_41_c671bd11ab7138e3acfe.jpg
+2024-04-28 12:22:07,176 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/train_batch1842_41_fc4945d497a93df1c50b.jpg media/images/train_batch1842_41_fc4945d497a93df1c50b.jpg
+2024-04-28 12:22:07,176 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/val_batch0_labels_50_94950b15302f97b86bf1.jpg media/images/val_batch0_labels_50_94950b15302f97b86bf1.jpg
+2024-04-28 12:22:07,176 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/val_batch0_pred_50_fe5aa2926ff341611541.jpg media/images/val_batch0_pred_50_fe5aa2926ff341611541.jpg
+2024-04-28 12:22:07,176 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/val_batch1_labels_50_6b670c3adb5eb3fa2166.jpg media/images/val_batch1_labels_50_6b670c3adb5eb3fa2166.jpg
+2024-04-28 12:22:07,176 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/val_batch1_pred_50_23c3b52840494de4c579.jpg media/images/val_batch1_pred_50_23c3b52840494de4c579.jpg
+2024-04-28 12:22:07,176 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/val_batch2_labels_50_d82119fd66ea07fe9905.jpg media/images/val_batch2_labels_50_d82119fd66ea07fe9905.jpg
+2024-04-28 12:22:07,176 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/val_batch2_pred_50_ee45c0e5cdaeaa4299e0.jpg media/images/val_batch2_pred_50_ee45c0e5cdaeaa4299e0.jpg
+2024-04-28 12:22:07,176 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/PR_curve_50_dc3f03409893a7d1ffdc.png media/images/PR_curve_50_dc3f03409893a7d1ffdc.png
+2024-04-28 12:22:07,177 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/F1_curve_50_dd1e1451d0d51fb2e8e8.png media/images/F1_curve_50_dd1e1451d0d51fb2e8e8.png
+2024-04-28 12:22:07,177 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/P_curve_50_5c39e6f48122dc1eb5b1.png media/images/P_curve_50_5c39e6f48122dc1eb5b1.png
+2024-04-28 12:22:07,177 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/R_curve_50_46aa52c0cccb9ae31ae7.png media/images/R_curve_50_46aa52c0cccb9ae31ae7.png
+2024-04-28 12:22:07,177 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/confusion_matrix_normalized_50_b43eb2fc5d267766668e.png media/images/confusion_matrix_normalized_50_b43eb2fc5d267766668e.png
+2024-04-28 12:22:07,177 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/confusion_matrix_50_664d8d9421a8543008c6.png media/images/confusion_matrix_50_664d8d9421a8543008c6.png
+2024-04-28 12:22:07,177 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/images/results_50_1ef34ce70f1e79cc140a.png media/images/results_50_1ef34ce70f1e79cc140a.png
+2024-04-28 12:22:07,179 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/table/curves/Precision-Recall(B)_table_50_e59740a797c9d63bc495.table.json media/table/curves/Precision-Recall(B)_table_50_e59740a797c9d63bc495.table.json
+2024-04-28 12:22:07,179 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/table/curves/F1-Confidence(B)_table_50_1a4359c6314b3ac59182.table.json media/table/curves/F1-Confidence(B)_table_50_1a4359c6314b3ac59182.table.json
+2024-04-28 12:22:07,179 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/table/curves/Precision-Confidence(B)_table_50_c7d167542cfd6deb458f.table.json media/table/curves/Precision-Confidence(B)_table_50_c7d167542cfd6deb458f.table.json
+2024-04-28 12:22:07,179 INFO    SenderThread:4250 [dir_watcher.py:finish():402] scan save: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/media/table/curves/Recall-Confidence(B)_table_50_acf937d225adfca6c947.table.json media/table/curves/Recall-Confidence(B)_table_50_acf937d225adfca6c947.table.json
+2024-04-28 12:22:07,179 INFO    SenderThread:4250 [sender.py:transition_state():614] send defer: 10
+2024-04-28 12:22:07,179 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: poll_exit
+2024-04-28 12:22:07,179 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:07,180 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-28 12:22:07,180 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:07,180 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-28 12:22:07,180 INFO    SenderThread:4250 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-28 12:22:07,563 INFO    wandb-upload_3:4250 [upload_job.py:push():131] Uploaded file /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/requirements.txt
+2024-04-28 12:22:07,580 INFO    wandb-upload_9:4250 [upload_job.py:push():131] Uploaded file /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/config.yaml
+2024-04-28 12:22:07,591 INFO    wandb-upload_1:4250 [upload_job.py:push():131] Uploaded file /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/wandb-summary.json
+2024-04-28 12:22:07,674 INFO    wandb-upload_7:4250 [upload_job.py:push():131] Uploaded file /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/files/output.log
+2024-04-28 12:22:07,874 INFO    Thread-46 (_thread_body):4250 [sender.py:transition_state():614] send defer: 11
+2024-04-28 12:22:07,874 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:07,875 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-28 12:22:07,876 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:07,876 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-28 12:22:07,876 INFO    SenderThread:4250 [file_pusher.py:join():178] waiting for file pusher
+2024-04-28 12:22:07,878 INFO    SenderThread:4250 [sender.py:transition_state():614] send defer: 12
+2024-04-28 12:22:07,878 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:07,879 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-28 12:22:07,879 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:07,879 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-28 12:22:07,879 INFO    SenderThread:4250 [file_stream.py:finish():614] file stream finish called
+2024-04-28 12:22:08,117 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-28 12:22:08,489 INFO    SenderThread:4250 [file_stream.py:finish():618] file stream finish is done
+2024-04-28 12:22:08,489 INFO    SenderThread:4250 [sender.py:transition_state():614] send defer: 13
+2024-04-28 12:22:08,489 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: poll_exit
+2024-04-28 12:22:08,489 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:08,490 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-28 12:22:08,490 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:08,491 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-28 12:22:08,491 INFO    SenderThread:4250 [sender.py:transition_state():614] send defer: 14
+2024-04-28 12:22:08,491 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 12:22:08,491 INFO    HandlerThread:4250 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-28 12:22:08,491 DEBUG   SenderThread:4250 [sender.py:send():379] send: final
+2024-04-28 12:22:08,491 DEBUG   SenderThread:4250 [sender.py:send():379] send: footer
+2024-04-28 12:22:08,491 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: defer
+2024-04-28 12:22:08,491 INFO    SenderThread:4250 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-28 12:22:08,492 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-28 12:22:08,492 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: poll_exit
+2024-04-28 12:22:08,493 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 12:22:08,493 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: server_info
+2024-04-28 12:22:08,494 DEBUG   SenderThread:4250 [sender.py:send_request():406] send_request: server_info
+2024-04-28 12:22:08,534 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-28 12:22:08,535 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-28 12:22:08,661 DEBUG   HandlerThread:4250 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-28 12:22:08,661 INFO    HandlerThread:4250 [handler.py:finish():866] shutting down handler
+2024-04-28 12:22:09,494 INFO    WriterThread:4250 [datastore.py:close():296] close: /home/pederu/Documents/YOLOv8_project/wandb/run-20240428_121051-90rl1bxb/run-90rl1bxb.wandb
+2024-04-28 12:22:09,661 INFO    SenderThread:4250 [sender.py:finish():1546] shutting down sender
+2024-04-28 12:22:09,661 INFO    SenderThread:4250 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-28 12:22:09,661 INFO    SenderThread:4250 [file_pusher.py:join():178] waiting for file pusher

@@ -1,0 +1,133 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/labels/train.cache... 1371 images, 0 backgrounds, 0 corrupt: 100%|██████████| 1371/1371 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/labels/val.cache... 343 images, 0 backgrounds, 0 corrupt: 100%|██████████| 343/343 [00:00<?, ?it/s]
+/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+Plotting labels to runs/detect/train20/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000833, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+[34m[1mTensorBoard: [39m[22mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/train20
+Starting training for 5 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        1/5      2.54G      2.426       3.27      1.178        279        640: 100%|██████████| 86/86 [00:52<00:00,  1.65it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 11/11 [00:04<00:00,  2.64it/s]
+                   all        343       4316      0.841     0.0666      0.108     0.0483
+        2/5      2.25G      2.071      1.895      1.057        425        640:   3%|▎         | 3/86 [00:00<00:27,  2.98it/s]
+
+
+
+
+
+
+
+
+
+
+        2/5      2.71G      1.954      1.642      1.008        252        640: 100%|██████████| 86/86 [00:25<00:00,  3.43it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 11/11 [00:01<00:00,  5.80it/s]
+                   all        343       4316      0.714      0.154      0.162     0.0896
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        3/5      2.49G      1.794      1.406     0.9726        245        640: 100%|██████████| 86/86 [00:38<00:00,  2.24it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 11/11 [00:04<00:00,  2.65it/s]
+                   all        343       4316      0.442       0.17      0.192      0.106
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+        4/5      2.38G      1.697      1.277     0.9511        270        640: 100%|██████████| 86/86 [00:26<00:00,  3.25it/s]
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 11/11 [00:07<00:00,  1.54it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 11/11 [00:07<00:00,  1.55it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+        5/5      2.72G      1.629       1.18     0.9325        244        640: 100%|██████████| 86/86 [00:20<00:00,  4.23it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  45%|████▌     | 5/11 [00:02<00:01,  3.22it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 11/11 [00:03<00:00,  3.35it/s]
+5 epochs completed in 0.069 hours.
+Optimizer stripped from runs/detect/train20/weights/last.pt, 6.2MB
+Optimizer stripped from runs/detect/train20/weights/best.pt, 6.2MB
+Validating runs/detect/train20/weights/best.pt...
+Ultralytics YOLOv8.1.46 🚀 Python-3.10.12 torch-2.2.2+cu121 CUDA:0 (NVIDIA GeForce RTX 4090, 24195MiB)
+Model summary (fused): 168 layers, 3007208 parameters, 0 gradients, 8.1 GFLOPs
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 11/11 [00:05<00:00,  2.02it/s]
+                   all        343       4316      0.371      0.296      0.267      0.143
+                   car        343       1906      0.566      0.664      0.668      0.383
+                 truck        343         25      0.112      0.106      0.101     0.0543
+                   bus        343         86        0.6      0.435      0.449      0.325
+               bicycle        343        186      0.286      0.263      0.139     0.0409
+               scooter        343         99      0.369     0.0707     0.0708     0.0128
+                person        343       1678       0.44      0.376      0.341      0.138
+                 rider        343        336      0.224      0.158      0.102     0.0441
+Speed: 0.1ms preprocess, 0.8ms inference, 0.0ms loss, 7.5ms postprocess per image
+Results saved to [1mruns/detect/train20

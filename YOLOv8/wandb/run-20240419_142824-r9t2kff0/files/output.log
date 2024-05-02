@@ -1,0 +1,738 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[34m[1mtrain: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/train... 0 images, 1415 backgrounds, 0 corrupt:  93%|█████████▎| 1415/1524 [00:29<00:02, 47.34it/s]
+
+[34m[1mtrain: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/train... 0 images, 1524 backgrounds, 0 corrupt: 100%|██████████| 1524/1524 [00:31<00:00, 48.01it/s]
+[34m[1mtrain: [39m[22mNew cache created: /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/train.cache
+WARNING ⚠️ No labels found in /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/train.cache, training may not work correctly. See https://docs.ultralytics.com/datasets/detect for dataset formatting guidance.
+
+
+
+
+[34m[1mval: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/val... 0 images, 317 backgrounds, 0 corrupt:  83%|████████▎ | 317/381 [00:09<00:01, 34.41it/s]
+[34m[1mval: [39m[22mWARNING ⚠️ No labels found in /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/val.cache. See https://docs.ultralytics.com/datasets/detect for dataset formatting guidance.
+[34m[1mval: [39m[22mNew cache created: /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/val.cache
+WARNING ⚠️ No labels found in /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/val.cache, training may not work correctly. See https://docs.ultralytics.com/datasets/detect for dataset formatting guidance.
+Plotting labels to runs/detect/train14/labels.jpg...
+zero-size array to reduction operation maximum which has no identity
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+
+[34m[1mval: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/val... 0 images, 381 backgrounds, 0 corrupt: 100%|██████████| 381/381 [00:10<00:00, 35.39it/s]
+[34m[1mTensorBoard: [39m[22mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/train14
+Starting training for 100 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+      1/100      2.25G          0      113.6          0          0        640:  83%|████████▎ | 80/96 [00:03<00:00, 31.14it/s]
+                   all        381          0          0          0          0          0
+      1/100       2.3G          0      111.1          0          0        640: 100%|██████████| 96/96 [00:03<00:00, 26.34it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 51.20it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      2/100      2.31G          0      89.49          0          0        640: 100%|██████████| 96/96 [00:03<00:00, 31.08it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 46.68it/s]
+                   all        381          0          0          0          0          0
+WARNING ⚠️ no labels found in detect set, can not compute metrics without labels
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+      3/100      2.31G          0      67.76          0          0        640: 100%|██████████| 96/96 [00:02<00:00, 33.03it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 128.54it/s]
+New https://pypi.org/project/ultralytics/8.2.2 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics YOLOv8.1.46 🚀 Python-3.10.12 torch-2.2.2+cu121 CUDA:0 (NVIDIA GeForce RTX 4090, 24195MiB)
+[34m[1mengine/trainer: [39m[22mtask=detect, mode=train, model=yolov8n.pt, data=/home/pederu/Documents/YOLOv8_project/cropped_data.yaml, epochs=100, time=None, patience=100, batch=16, imgsz=640, save=True, save_period=-1, cache=False, device=None, workers=8, project=None, name=train15, exist_ok=False, pretrained=True, optimizer=auto, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, multi_scale=False, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, vid_stride=1, stream_buffer=False, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, embed=None, show=False, save_frames=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, show_boxes=True, line_width=None, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=None, workspace=4, nms=False, lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, label_smoothing=0.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, bgr=0.0, mosaic=1.0, mixup=0.0, copy_paste=0.0, auto_augment=randaugment, erasing=0.4, crop_fraction=1.0, cfg=None, tracker=botsort.yaml, save_dir=runs/detect/train15
+Overriding model.yaml nc=80 with nc=8
+                   from  n    params  module                                       arguments
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]
+  2                  -1  1      7360  ultralytics.nn.modules.block.C2f             [32, 32, 1, True]
+  3                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+  4                  -1  2     49664  ultralytics.nn.modules.block.C2f             [64, 64, 2, True]
+  5                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]
+  6                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]
+  8                  -1  1    460288  ultralytics.nn.modules.block.C2f             [256, 256, 1, True]
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 12                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 15                  -1  1     37248  ultralytics.nn.modules.block.C2f             [192, 64, 1]
+ 16                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 18                  -1  1    123648  ultralytics.nn.modules.block.C2f             [192, 128, 1]
+ 19                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 21                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]
+ 22        [15, 18, 21]  1    752872  ultralytics.nn.modules.head.Detect           [8, [64, 128, 256]]
+Model summary: 225 layers, 3012408 parameters, 3012392 gradients, 8.2 GFLOPs
+Transferred 319/355 items from pretrained weights
+[34m[1mTensorBoard: [39m[22mStart with 'tensorboard --logdir runs/detect/train15', view at http://localhost:6006/
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/train... 0 images, 1340 backgrounds, 0 corrupt:  88%|████████▊ | 1340/1524 [00:01<00:00, 1202.06it/s]
+[34m[1mtrain: [39m[22mWARNING ⚠️ No labels found in /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/train.cache. See https://docs.ultralytics.com/datasets/detect for dataset formatting guidance.
+[34m[1mtrain: [39m[22mNew cache created: /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/train.cache
+WARNING ⚠️ No labels found in /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/train.cache, training may not work correctly. See https://docs.ultralytics.com/datasets/detect for dataset formatting guidance.
+[34m[1mval: [39m[22mWARNING ⚠️ No labels found in /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/val.cache. See https://docs.ultralytics.com/datasets/detect for dataset formatting guidance.
+[34m[1mval: [39m[22mNew cache created: /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/val.cache
+WARNING ⚠️ No labels found in /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/val.cache, training may not work correctly. See https://docs.ultralytics.com/datasets/detect for dataset formatting guidance.
+Plotting labels to runs/detect/train15/labels.jpg...
+zero-size array to reduction operation maximum which has no identity
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1mtrain: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/train... 0 images, 1524 backgrounds, 0 corrupt: 100%|██████████| 1524/1524 [00:01<00:00, 829.06it/s]
+[34m[1mval: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/dataset/cropped_images/val... 0 images, 381 backgrounds, 0 corrupt: 100%|██████████| 381/381 [00:00<00:00, 742.91it/s]
+[34m[1mTensorBoard: [39m[22mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/train15
+Starting training for 100 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+      1/100      2.62G          0      118.4          0          0        640:  55%|█████▌    | 53/96 [00:10<00:08,  4.91it/s]
+New https://pypi.org/project/ultralytics/8.2.2 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics YOLOv8.1.46 🚀 Python-3.10.12 torch-2.2.2+cu121 CUDA:0 (NVIDIA GeForce RTX 4090, 24195MiB)
+[34m[1mengine/trainer: [39m[22mtask=detect, mode=train, model=yolov8n.pt, data=/home/pederu/Documents/YOLOv8_project/cropped_data.yaml, epochs=100, time=None, patience=100, batch=16, imgsz=640, save=True, save_period=-1, cache=False, device=None, workers=8, project=None, name=train16, exist_ok=False, pretrained=True, optimizer=auto, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, multi_scale=False, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, vid_stride=1, stream_buffer=False, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, embed=None, show=False, save_frames=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, show_boxes=True, line_width=None, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=None, workspace=4, nms=False, lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, label_smoothing=0.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, bgr=0.0, mosaic=1.0, mixup=0.0, copy_paste=0.0, auto_augment=randaugment, erasing=0.4, crop_fraction=1.0, cfg=None, tracker=botsort.yaml, save_dir=runs/detect/train16
+Overriding model.yaml nc=80 with nc=8
+                   from  n    params  module                                       arguments
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]
+  2                  -1  1      7360  ultralytics.nn.modules.block.C2f             [32, 32, 1, True]
+  3                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+  4                  -1  2     49664  ultralytics.nn.modules.block.C2f             [64, 64, 2, True]
+  5                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]
+  6                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]
+  8                  -1  1    460288  ultralytics.nn.modules.block.C2f             [256, 256, 1, True]
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 12                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 15                  -1  1     37248  ultralytics.nn.modules.block.C2f             [192, 64, 1]
+ 16                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 18                  -1  1    123648  ultralytics.nn.modules.block.C2f             [192, 128, 1]
+ 19                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 21                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]
+ 22        [15, 18, 21]  1    752872  ultralytics.nn.modules.head.Detect           [8, [64, 128, 256]]
+Model summary: 225 layers, 3012408 parameters, 3012392 gradients, 8.2 GFLOPs
+Transferred 319/355 items from pretrained weights
+[34m[1mTensorBoard: [39m[22mStart with 'tensorboard --logdir runs/detect/train16', view at http://localhost:6006/
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/cropped_dataset/labels/train... 833 images, 0 backgrounds, 0 corrupt:  55%|█████▍    | 833/1524 [00:01<00:01, 568.74it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+[34m[1mtrain: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/cropped_dataset/labels/train... 1524 images, 0 backgrounds, 0 corrupt: 100%|██████████| 1524/1524 [00:02<00:00, 586.45it/s]
+[34m[1mtrain: [39m[22mNew cache created: /home/pederu/Documents/YOLOv8_project/cropped_dataset/labels/train.cache
+[34m[1mval: [39m[22mNew cache created: /home/pederu/Documents/YOLOv8_project/cropped_dataset/labels/val.cache
+Plotting labels to runs/detect/train16/labels.jpg...
+[34m[1mval: [39m[22mScanning /home/pederu/Documents/YOLOv8_project/cropped_dataset/labels/val... 381 images, 0 backgrounds, 0 corrupt: 100%|██████████| 381/381 [00:00<00:00, 392.22it/s]
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000833, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+[34m[1mTensorBoard: [39m[22mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/train16
+Starting training for 100 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+      1/100      3.79G      2.894      3.444      1.283        397        640:  95%|█████████▍| 91/96 [00:04<00:00, 25.07it/s]
+      1/100      3.82G      2.867      3.384      1.272         91        640: 100%|██████████| 96/96 [00:04<00:00, 20.79it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.61it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+      2/100      3.35G      2.465      2.051      1.043        454        640:   0%|          | 0/96 [00:00<?, ?it/s]wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+      2/100      3.36G      2.322      1.974      1.037        334        640:   0%|          | 0/96 [00:00<?, ?it/s]wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+      2/100      3.36G      2.363      2.036      1.021        444        640:   3%|▎         | 3/96 [00:00<00:03, 25.51it/s]wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+      2/100      3.36G      2.313      2.005      1.035        476        640:  16%|█▌        | 15/96 [00:00<00:03, 24.60it/s]wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+      2/100      3.36G      2.307      2.001      1.035        325        640:  19%|█▉        | 18/96 [00:00<00:03, 24.20it/s]wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+      2/100      3.36G      2.302      2.001      1.034        283        640:  19%|█▉        | 18/96 [00:00<00:03, 24.20it/s]wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+
+      2/100      3.85G      2.172      1.796      1.012        373        640:  91%|█████████ | 87/96 [00:03<00:00, 25.83it/s]
+      2/100       3.9G       2.16      1.777      1.011        120        640: 100%|██████████| 96/96 [00:03<00:00, 24.87it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.24it/s]
+[34m[1mwandb[39m[22m: [33mWARNING[39m Step only supports monotonically increasing values, use define_metric to set a custom x axis. For details see: https://wandb.me/define-metric
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 3. Dropping entry: {'train/box_loss': 2.86722, 'train/cls_loss': 3.38365, 'train/dfl_loss': 1.27189, '_timestamp': 1713530744.881018}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 3. Dropping entry: {'lr/pg0': 0.00027477430555555556, 'lr/pg1': 0.00027477430555555556, 'lr/pg2': 0.00027477430555555556, '_timestamp': 1713530744.881109}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 3. Dropping entry: {'metrics/precision(B)': 0.81415, 'metrics/recall(B)': 0.05529, 'metrics/mAP50(B)': 0.07709, 'metrics/mAP50-95(B)': 0.03127, 'val/box_loss': 2.25593, 'val/cls_loss': 2.67827, 'val/dfl_loss': 1.01231, '_timestamp': 1713530748.7991252}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 3. Dropping entry: {'labels': {'_type': 'image-file', 'sha256': '904c1ef3da8270439d435408d38489e18bc6f58fd31474933a20490bf4130b7e', 'size': 125675, 'path': 'media/images/labels_3_904c1ef3da8270439d43.jpg', 'format': 'jpg', 'width': 1600, 'height': 1600}, '_timestamp': 1713530748.8617663}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 3. Dropping entry: {'train_batch0': {'_type': 'image-file', 'sha256': '5e0a2eb8561bf52afa2a220ae43d8e769b08d499b49e5965538a49cda852d50d', 'size': 313949, 'path': 'media/images/train_batch0_3_5e0a2eb8561bf52afa2a.jpg', 'format': 'jpg', 'width': 1920, 'height': 1920}, '_timestamp': 1713530748.9424412}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 3. Dropping entry: {'train_batch1': {'_type': 'image-file', 'sha256': '1ed755f440fc9642422d815753079454af4a8fa4bdf52fffa37d388af3f7d30a', 'size': 341307, 'path': 'media/images/train_batch1_3_1ed755f440fc9642422d.jpg', 'format': 'jpg', 'width': 1920, 'height': 1920}, '_timestamp': 1713530749.0701768}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 3. Dropping entry: {'train_batch2': {'_type': 'image-file', 'sha256': '03eeb400ba67fe0a2743243a751e0ad489e9a71cea6d54e6ea8c6ece7b29b3ab', 'size': 319078, 'path': 'media/images/train_batch2_3_03eeb400ba67fe0a2743.jpg', 'format': 'jpg', 'width': 1920, 'height': 1920}, '_timestamp': 1713530749.1248229}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 3. Dropping entry: {'model/parameters': 3012408, 'model/GFLOPs': 8.202, 'model/speed_PyTorch(ms)': 0.146, '_timestamp': 1713530749.1737843}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 2 is less than current step: 3. Dropping entry: {'train/box_loss': 2.1597, 'train/cls_loss': 1.77703, 'train/dfl_loss': 1.01077, '_timestamp': 1713530753.0805235}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 2 is less than current step: 3. Dropping entry: {'lr/pg0': 0.0005469718065972222, 'lr/pg1': 0.0005469718065972222, 'lr/pg2': 0.0005469718065972222, '_timestamp': 1713530753.080588}).
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      3/100      3.69G      1.977      1.492     0.9738         97        640: 100%|██████████| 96/96 [00:03<00:00, 26.76it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 3/12 [00:00<00:00, 25.39it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.50it/s]
+      4/100      3.57G      2.029      1.446     0.9662        394        640:   6%|▋         | 6/96 [00:00<00:03, 25.22it/s]
+      4/100      3.57G      1.958      1.424     0.9636        352        640:  12%|█▎        | 12/96 [00:00<00:03, 25.41it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      4/100      3.57G      1.955      1.415     0.9624        419        640:  16%|█▌        | 15/96 [00:00<00:03, 26.30it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      4/100      3.79G      1.905       1.34     0.9551        116        640: 100%|██████████| 96/96 [00:03<00:00, 26.74it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.04it/s]
+                   all        381       4567      0.501      0.197      0.197     0.0971
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 2 is less than current step: 3. Dropping entry: {'metrics/precision(B)': 0.55134, 'metrics/recall(B)': 0.13744, 'metrics/mAP50(B)': 0.14354, 'metrics/mAP50-95(B)': 0.07028, 'val/box_loss': 1.95571, 'val/cls_loss': 1.38122, 'val/dfl_loss': 0.95901, '_timestamp': 1713530757.0137575}).
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+      5/100      3.87G      1.824      1.234     0.9433        137        640: 100%|██████████| 96/96 [00:04<00:00, 19.99it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.32it/s]
+                   all        381       4567      0.413      0.223      0.224      0.115
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+      6/100      3.57G      1.778      1.157     0.9339        109        640: 100%|██████████| 96/96 [00:04<00:00, 19.88it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.01it/s]
+                   all        381       4567      0.423      0.254      0.235      0.117
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      7/100      3.59G      1.732      1.099      0.926        420        640:  22%|██▏       | 21/96 [00:01<00:05, 12.61it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      7/100      3.59G      1.715      1.092     0.9232        362        640:  27%|██▋       | 26/96 [00:01<00:04, 15.64it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      7/100      3.63G      1.734      1.099      0.921        100        640: 100%|██████████| 96/96 [00:04<00:00, 19.71it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 9/12 [00:00<00:00, 25.10it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.20it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+      8/100      3.69G       1.74      1.068     0.9172        357        640:  86%|████████▋ | 83/96 [00:04<00:00, 20.85it/s]
+      8/100      3.91G      1.736      1.063     0.9167         53        640: 100%|██████████| 96/96 [00:05<00:00, 18.42it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.05it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+      9/100      3.89G      1.696      1.025     0.9128        439        640:  66%|██████▌   | 63/96 [00:04<00:02, 13.82it/s]
+      9/100      3.93G      1.686      1.018     0.9135        124        640: 100%|██████████| 96/96 [00:05<00:00, 16.59it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.55it/s]
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     10/100      3.33G      1.506     0.9239     0.8897        402        640:   0%|          | 0/96 [00:00<?, ?it/s]
+
+
+     10/100      3.64G      1.648     0.9684     0.9059         78        640: 100%|██████████| 96/96 [00:04<00:00, 20.18it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.71it/s]
+                   all        381       4567      0.532      0.324      0.339      0.171
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+     11/100      3.57G      1.646     0.9569     0.9078        118        640: 100%|██████████| 96/96 [00:04<00:00, 19.84it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.50it/s]
+                   all        381       4567      0.507      0.343       0.34      0.167
+     12/100      3.46G      1.572     0.9586     0.8837        393        640:   6%|▋         | 6/96 [00:00<00:03, 23.54it/s]
+
+     12/100      3.69G      1.615     0.9416     0.8978         97        640: 100%|██████████| 96/96 [00:03<00:00, 25.94it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.84it/s]
+                   all        381       4567       0.56      0.344       0.37      0.194
+     13/100      3.35G      1.611     0.9264     0.8998        356        640:  16%|█▌        | 15/96 [00:00<00:03, 26.63it/s]
+     13/100      3.54G      1.612     0.9332        0.9        365        640:  31%|███▏      | 30/96 [00:01<00:02, 26.76it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     13/100      3.54G      1.614     0.9308     0.9014        277        640:  34%|███▍      | 33/96 [00:01<00:02, 26.51it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     13/100      3.59G      1.605     0.9169     0.8968         71        640: 100%|██████████| 96/96 [00:03<00:00, 26.57it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 23.76it/s]
+                   all        381       4567      0.615      0.339      0.366      0.182
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+     14/100       4.1G      1.601     0.8975     0.8966        487        640:  75%|███████▌  | 72/96 [00:02<00:00, 26.32it/s]
+     14/100      4.15G      1.589     0.8913     0.8956         73        640: 100%|██████████| 96/96 [00:03<00:00, 26.45it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.19it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+     15/100      3.58G      1.579     0.8888     0.8933        297        640:  78%|███████▊  | 75/96 [00:02<00:00, 26.62it/s]
+     15/100      3.62G      1.575     0.8853     0.8909         73        640: 100%|██████████| 96/96 [00:03<00:00, 26.76it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.88it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+     16/100      3.72G      1.514     0.8594     0.8877        285        640:  91%|█████████ | 87/96 [00:03<00:00, 25.31it/s]
+     16/100      3.76G      1.521      0.863      0.888         81        640: 100%|██████████| 96/96 [00:03<00:00, 25.59it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.47it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+     17/100      3.74G      1.527     0.8575     0.8839        295        640:  91%|█████████ | 87/96 [00:03<00:00, 25.91it/s]
+     17/100      3.78G      1.534     0.8616     0.8847         77        640: 100%|██████████| 96/96 [00:03<00:00, 25.59it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 23.70it/s]
+     18/100      3.57G      1.531     0.8685     0.8831        385        640:  34%|███▍      | 33/96 [00:01<00:02, 26.00it/s]
+     18/100      3.79G      1.524     0.8613     0.8812        357        640:  50%|█████     | 48/96 [00:01<00:01, 25.34it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     18/100      3.83G      1.524     0.8566     0.8835         66        640: 100%|██████████| 96/96 [00:03<00:00, 25.59it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.44it/s]
+                   all        381       4567      0.596      0.364      0.408      0.204
+     19/100      3.46G      1.489     0.8305     0.8822        382        640:  16%|█▌        | 15/96 [00:00<00:03, 24.84it/s]
+
+     19/100         4G      1.503     0.8349     0.8845        102        640: 100%|██████████| 96/96 [00:04<00:00, 23.89it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.41it/s]
+                   all        381       4567      0.632      0.358      0.398      0.198
+     20/100      3.51G      1.529     0.8361     0.8876        328        640:  16%|█▌        | 15/96 [00:00<00:03, 24.08it/s]
+
+
+     20/100       3.7G      1.502     0.8256     0.8803        323        640:  91%|█████████ | 87/96 [00:04<00:00, 20.55it/s]
+     20/100      3.75G      1.499      0.824     0.8802         56        640: 100%|██████████| 96/96 [00:04<00:00, 19.42it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.02it/s]
+     21/100      3.59G      1.499     0.8265     0.8661        339        640:  12%|█▎        | 12/96 [00:00<00:03, 26.81it/s]
+
+     21/100       3.8G      1.482     0.8139     0.8741        247        640:  60%|██████    | 58/96 [00:03<00:01, 22.06it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     21/100       3.8G      1.483     0.8159     0.8746        345        640:  95%|█████████▍| 91/96 [00:04<00:00, 23.52it/s]
+     21/100      3.85G      1.482     0.8152     0.8743         83        640: 100%|██████████| 96/96 [00:04<00:00, 20.03it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 23.04it/s]
+     22/100      3.31G       1.48      0.818     0.8707        305        640:  12%|█▎        | 12/96 [00:00<00:03, 25.57it/s]
+
+
+     22/100      3.91G      1.475     0.8098      0.875         83        640: 100%|██████████| 96/96 [00:04<00:00, 20.05it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 23.40it/s]
+                   all        381       4567      0.603      0.388      0.411      0.214
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+     23/100      3.76G      1.469     0.8004     0.8703        100        640: 100%|██████████| 96/96 [00:04<00:00, 20.64it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.15it/s]
+                   all        381       4567      0.566      0.393       0.41      0.217
+     24/100      3.63G      1.433      0.781     0.8746        410        640:  22%|██▏       | 21/96 [00:01<00:05, 14.96it/s]
+
+     24/100      3.99G      1.454     0.7892     0.8743         59        640: 100%|██████████| 96/96 [00:04<00:00, 20.41it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 3/12 [00:00<00:00, 24.53it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 6/12 [00:00<00:00, 24.23it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.17it/s]
+                   all        381       4567       0.64      0.437      0.461      0.235
+     25/100      3.51G      1.479     0.7907     0.8794        487        640:  16%|█▌        | 15/96 [00:00<00:03, 26.30it/s]
+
+
+     25/100      3.74G      1.455     0.7873     0.8718         87        640: 100%|██████████| 96/96 [00:04<00:00, 19.94it/s]
+                   all        381       4567      0.598      0.444      0.461      0.235
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.78it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+     26/100      3.81G      1.451     0.7806     0.8696        346        640:  75%|███████▌  | 72/96 [00:03<00:00, 24.57it/s]
+     26/100      3.86G      1.449     0.7804     0.8712         54        640: 100%|██████████| 96/96 [00:04<00:00, 21.02it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 23.73it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+     27/100      3.81G       1.44      0.773     0.8721        494        640:  75%|███████▌  | 72/96 [00:03<00:00, 24.59it/s]
+     27/100      3.86G      1.446     0.7768     0.8712        126        640: 100%|██████████| 96/96 [00:03<00:00, 24.82it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.58it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     28/100      3.99G      1.423     0.7614     0.8689         82        640: 100%|██████████| 96/96 [00:03<00:00, 25.51it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/12 [00:00<?, ?it/s]
+     28/100      3.99G      1.423     0.7614     0.8689         82        640: 100%|██████████| 96/96 [00:03<00:00, 25.51it/s]
+                   all        381       4567      0.676      0.426      0.448      0.227
+     28/100      3.99G      1.423     0.7614     0.8689         82        640: 100%|██████████| 96/96 [00:03<00:00, 25.51it/s]
+     29/100       3.6G      1.416     0.7637     0.8661        359        640:  50%|█████     | 48/96 [00:01<00:01, 27.17it/s]
+     29/100      3.95G      1.407     0.7606     0.8651         48        640: 100%|██████████| 96/96 [00:03<00:00, 26.76it/s]
+     29/100      3.95G      1.407     0.7606     0.8651         48        640: 100%|██████████| 96/96 [00:03<00:00, 26.76it/s]
+                   all        381       4567      0.632      0.433      0.455      0.239
+     30/100      3.36G      1.485     0.8123      0.868        307        640:   6%|▋         | 6/96 [00:00<00:03, 25.18it/s]]
+     30/100      3.36G      1.485     0.8123      0.868        307        640:   6%|▋         | 6/96 [00:00<00:03, 25.18it/s]]
+     30/100      3.98G       1.41     0.7604     0.8656        448        640:  62%|██████▎   | 60/96 [00:02<00:01, 26.13it/s]
+     30/100      4.03G      1.405     0.7587     0.8659         64        640: 100%|██████████| 96/96 [00:03<00:00, 26.35it/s]
+     30/100      4.03G      1.405     0.7587     0.8659         64        640: 100%|██████████| 96/96 [00:03<00:00, 26.35it/s]
+                   all        381       4567      0.674      0.431      0.478       0.25
+     31/100      3.56G      1.427     0.7597     0.8681        339        640:  19%|█▉        | 18/96 [00:00<00:02, 26.23it/s]
+     31/100      3.88G      1.393     0.7482     0.8623        356        640:  72%|███████▏  | 69/96 [00:02<00:01, 26.41it/s]
+     31/100      3.88G      1.393     0.7482     0.8623        356        640:  72%|███████▏  | 69/96 [00:02<00:01, 26.41it/s]
+     31/100      3.92G      1.395     0.7498     0.8619         95        640: 100%|██████████| 96/96 [00:03<00:00, 25.98it/s]
+     31/100      3.92G      1.395     0.7498     0.8619         95        640: 100%|██████████| 96/96 [00:03<00:00, 25.98it/s]
+     32/100      3.46G      1.354     0.7348     0.8605        469        640:  22%|██▏       | 21/96 [00:00<00:02, 26.54it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     32/100      3.46G      1.354     0.7348     0.8605        469        640:  22%|██▏       | 21/96 [00:00<00:02, 26.54it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     32/100      3.46G      1.354     0.7348     0.8605        469        640:  22%|██▏       | 21/96 [00:00<00:02, 26.54it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.44it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.44it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/12 [00:00<?, ?it/s]5.44it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/12 [00:00<?, ?it/s]5.44it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.95it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.95it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.95it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.95it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.75it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.75it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.75it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.75it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.22it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.22it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.22it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.22it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.22it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.91it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.91it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.91it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.91it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.34it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.34it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.652      0.464      0.489      0.255
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.34it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.655        0.5      0.517      0.277
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     39/100      3.76G      1.369     0.7209     0.8589        371        640:  65%|██████▍   | 62/96 [00:03<00:01, 19.98it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     39/100      3.81G      1.365     0.7181     0.8594         88        640: 100%|██████████| 96/96 [00:04<00:00, 20.12it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     39/100      3.81G      1.365     0.7181     0.8594         88        640: 100%|██████████| 96/96 [00:04<00:00, 20.12it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     40/100      3.35G      1.329     0.7098     0.8552        337        640:  16%|█▌        | 15/96 [00:00<00:03, 26.68it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     40/100      3.35G      1.329     0.7098     0.8552        337        640:  16%|█▌        | 15/96 [00:00<00:03, 26.68it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     40/100       3.5G      1.323     0.7026     0.8581        338        640:  44%|████▍     | 42/96 [00:02<00:02, 21.20it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     40/100       3.5G      1.336     0.7044     0.8578        370        640:  83%|████████▎ | 80/96 [00:04<00:00, 20.60it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     40/100       3.5G      1.336     0.7044     0.8578        370        640:  83%|████████▎ | 80/96 [00:04<00:00, 20.60it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     40/100      3.69G      1.345     0.7096     0.8578         74        640: 100%|██████████| 96/96 [00:04<00:00, 19.61it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     40/100      3.69G      1.345     0.7096     0.8578         74        640: 100%|██████████| 96/96 [00:04<00:00, 19.61it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     41/100      3.71G       1.32     0.6979     0.8525        427        640:  28%|██▊       | 27/96 [00:01<00:03, 17.28it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     41/100      3.71G       1.34     0.7067     0.8524        417        640:  72%|███████▏  | 69/96 [00:03<00:01, 21.80it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     41/100      3.75G      1.336     0.7046     0.8535         50        640: 100%|██████████| 96/96 [00:04<00:00, 19.93it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     41/100      3.75G      1.336     0.7046     0.8535         50        640: 100%|██████████| 96/96 [00:04<00:00, 19.93it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     42/100      3.35G      1.345     0.7076     0.8526        306        640:  16%|█▌        | 15/96 [00:00<00:03, 24.96it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     42/100      3.35G      1.345     0.7076     0.8526        306        640:  16%|█▌        | 15/96 [00:00<00:03, 24.96it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     42/100      3.49G      1.311     0.6904     0.8524        361        640:  57%|█████▋    | 55/96 [00:02<00:01, 25.82it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     42/100      3.85G      1.316     0.6939     0.8541        108        640: 100%|██████████| 96/96 [00:04<00:00, 22.65it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     42/100      3.85G      1.316     0.6939     0.8541        108        640: 100%|██████████| 96/96 [00:04<00:00, 22.65it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)  640: 100%|██████████| 96/96 [00:04<00:00, 22.65it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)  640: 100%|██████████| 96/96 [00:04<00:00, 22.65it/s] 24.93it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.21it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.21it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.591      0.485      0.487      0.256
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.21it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.48it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.48it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.662      0.511      0.525      0.274
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.48it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.31it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.31it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567       0.67      0.497      0.513      0.269
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.31it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.23it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.23it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.667      0.494      0.522      0.276
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.23it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     48/100      3.37G      1.271     0.6597     0.8552        381        640:   3%|▎         | 3/96 [00:00<00:03, 24.88it/s], 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     48/100      3.37G      1.271     0.6597     0.8552        381        640:   3%|▎         | 3/96 [00:00<00:03, 24.88it/s], 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     48/100       3.7G      1.305     0.6825     0.8492        421        640:  59%|█████▉    | 57/96 [00:02<00:01, 26.82it/s] 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     48/100      3.74G      1.297     0.6792     0.8485         88        640: 100%|██████████| 96/96 [00:03<00:00, 26.33it/s] 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     48/100      3.74G      1.297     0.6792     0.8485         88        640: 100%|██████████| 96/96 [00:03<00:00, 26.33it/s] 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     49/100      3.38G      1.291     0.6853     0.8476        299        640:  16%|█▌        | 15/96 [00:00<00:02, 27.22it/s] 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     49/100      3.38G      1.291     0.6853     0.8476        299        640:  16%|█▌        | 15/96 [00:00<00:02, 27.22it/s] 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     49/100      3.68G      1.295     0.6763     0.8477        328        640:  72%|███████▏  | 69/96 [00:02<00:00, 27.66it/s] 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     49/100      3.73G      1.289     0.6739     0.8472        116        640: 100%|██████████| 96/96 [00:03<00:00, 27.13it/s] 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     49/100      3.73G      1.289     0.6739     0.8472        116        640: 100%|██████████| 96/96 [00:03<00:00, 27.13it/s] 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.678      0.531      0.542      0.281
+     50/100      4.01G      1.292     0.6782     0.8499        428        640:  34%|███▍      | 33/96 [00:01<00:03, 17.20it/s] 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     50/100      4.01G      1.309     0.6843     0.8487        387        640:  81%|████████▏ | 78/96 [00:03<00:00, 23.23it/s] 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     50/100      4.05G      1.303     0.6807     0.8479        113        640: 100%|██████████| 96/96 [00:04<00:00, 20.62it/s] 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     50/100      4.05G      1.303     0.6807     0.8479        113        640: 100%|██████████| 96/96 [00:04<00:00, 20.62it/s] 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+  0%|          | 0/96 [00:00<?, ?it/s]0.6807     0.8479        113        640: 100%|██████████| 96/96 [00:04<00:00, 20.62it/s] 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+  0%|          | 0/96 [00:00<?, ?it/s]0.6807     0.8479        113        640: 100%|██████████| 96/96 [00:04<00:00, 20.62it/s] 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     51/100      3.46G      1.308     0.6814     0.8517        366        640:   6%|▋         | 6/96 [00:00<00:03, 25.40it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log))
+     51/100      3.46G      1.308     0.6814     0.8517        366        640:   6%|▋         | 6/96 [00:00<00:03, 25.40it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.73it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.73it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+                   all        381       4567      0.699      0.527      0.549      0.303
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.73it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.66it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.66it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+                   all        381       4567       0.67      0.542      0.545      0.297
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.66it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.66it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.66it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.85it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.85it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+     54/100      3.63G      1.252      0.658     0.8379        302        640:  17%|█▋        | 16/96 [00:01<00:06, 12.78it/s] 26.85it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+     54/100      3.63G      1.252      0.658     0.8379        302        640:  17%|█▋        | 16/96 [00:01<00:06, 12.78it/s] 26.85it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 6/12 [00:00<00:00, 25.61it/s]] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 6/12 [00:00<00:00, 25.61it/s]] Dropped streaming file chunk (see wandb/debug-internal.log))
+                   all        381       4567      0.664      0.533      0.542      0.294
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 6/12 [00:00<00:00, 25.61it/s]] Dropped streaming file chunk (see wandb/debug-internal.log))
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 6/12 [00:00<00:00, 25.61it/s]] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 9/12 [00:00<00:00, 24.27it/s]] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 9/12 [00:00<00:00, 24.27it/s]] Dropped streaming file chunk (see wandb/debug-internal.log))
+                   all        381       4567      0.698      0.542       0.56      0.302
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 9/12 [00:00<00:00, 24.27it/s]] Dropped streaming file chunk (see wandb/debug-internal.log))
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 9/12 [00:00<00:00, 24.27it/s]] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 9/12 [00:00<00:00, 24.27it/s]] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.67it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.67it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.67it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.67it/s] Dropped streaming file chunk (see wandb/debug-internal.log))
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.75it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.75it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/12 [00:00<?, ?it/s]5.75it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/12 [00:00<?, ?it/s]5.75it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.659      0.531       0.55      0.301
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/12 [00:00<?, ?it/s]5.75it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 3/12 [00:00<00:00, 25.26it/s]]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 3/12 [00:00<00:00, 25.26it/s]]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.706      0.546      0.572      0.315
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 3/12 [00:00<00:00, 25.26it/s]]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 3/12 [00:00<00:00, 25.26it/s]]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.59it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.59it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.708      0.544      0.573      0.311
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.59it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.72it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.72it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.724      0.545      0.571      0.311
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.72it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     62/100      3.73G      1.214     0.6294     0.8384        342        640:  66%|██████▌   | 63/96 [00:02<00:01, 26.76it/s] 25.72it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.96it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.96it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.673      0.552      0.562      0.307
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.96it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.705      0.545      0.568      0.321
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.04it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 27.02it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 27.02it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 27.02it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.12it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.12it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.694      0.551       0.57      0.317
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.12it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 6/12 [00:00<00:00, 25.42it/s]OR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 6/12 [00:00<00:00, 25.42it/s]OR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.25it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.25it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.25it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.28it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.28it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.688      0.564      0.578      0.315
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.28it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.28it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.28it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.19it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.19it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.19it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 23.99it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 23.99it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.714      0.564      0.589      0.322
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 23.99it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 23.99it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.56it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.56it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.729      0.567      0.581      0.321
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.56it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.70it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.70it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.736      0.557      0.586      0.321
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.70it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.70it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.70it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.16it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.16it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     73/100       3.7G      1.183     0.6136     0.8331        261        640:  33%|███▎      | 32/96 [00:01<00:03, 19.80it/s] 24.16it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     73/100       3.7G      1.183     0.6136     0.8331        261        640:  33%|███▎      | 32/96 [00:01<00:03, 19.80it/s] 24.16it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+     73/100       3.7G      1.183     0.6136     0.8331        261        640:  33%|███▎      | 32/96 [00:01<00:03, 19.80it/s] 24.16it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.00it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.00it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.00it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.00it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.53it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.53it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.53it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.53it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.20it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.20it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.20it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.20it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.23it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.23it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.23it/s]R Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 9/12 [00:00<00:00, 24.06it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 9/12 [00:00<00:00, 24.06it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.42it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.42it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 6/12 [00:00<00:00, 24.43it/s]]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 6/12 [00:00<00:00, 24.43it/s]]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.699      0.584      0.597      0.331
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 6/12 [00:00<00:00, 24.43it/s]]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 6/12 [00:00<00:00, 24.43it/s]]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.49it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.49it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.722      0.573        0.6      0.337
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.49it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.49it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.23it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.23it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.23it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.23it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     81/100      3.84G      1.137      0.589     0.8289         79        640: 100%|██████████| 96/96 [00:04<00:00, 20.56it/s] 24.23it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     81/100      3.84G      1.137      0.589     0.8289         79        640: 100%|██████████| 96/96 [00:04<00:00, 20.56it/s] 24.23it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     82/100      3.44G       1.13      0.583     0.8325        395        640:  31%|███▏      | 30/96 [00:01<00:03, 16.87it/s] 24.23it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     82/100      3.44G       1.13      0.583     0.8325        395        640:  31%|███▏      | 30/96 [00:01<00:03, 16.87it/s] 24.23it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.19it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.19it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.752      0.554      0.606      0.339
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.19it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.43it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.43it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.736      0.564      0.596      0.336
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.43it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 3/12 [00:00<00:00, 24.80it/s]]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 3/12 [00:00<00:00, 24.80it/s]]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.20it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.20it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.20it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.20it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.20it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.71it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.71it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.71it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.71it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.71it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.68it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.68it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     87/100      3.55G      1.143     0.5886     0.8285        302        640:  67%|██████▋   | 64/96 [00:03<00:01, 22.76it/s] 25.68it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.56it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.56it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.733      0.566      0.599      0.341
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.56it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.92it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.92it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.762      0.569      0.599      0.342
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.92it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.60it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.60it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.745      0.575      0.606      0.346
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.60it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.66it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.66it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                   all        381       4567      0.749      0.569      0.607      0.353
+Closing dataloader mosaic
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.66it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     91/100      3.49G      1.094     0.5779      0.827         54        640: 100%|██████████| 96/96 [00:03<00:00, 24.79it/s] 25.66it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     91/100      3.49G      1.094     0.5779      0.827         54        640: 100%|██████████| 96/96 [00:03<00:00, 24.79it/s] 25.66it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)00, 24.79it/s] 25.66it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)00, 24.79it/s] 25.66it/s]andb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     92/100      3.45G      1.061     0.5573     0.8245        174        640:  66%|██████▌   | 63/96 [00:02<00:01, 27.10it/s]wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+     92/100      3.49G      1.059     0.5563     0.8223         49        640: 100%|██████████| 96/96 [00:03<00:00, 27.00it/s]wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+     92/100      3.49G      1.059     0.5563     0.8223         49        640: 100%|██████████| 96/96 [00:03<00:00, 27.00it/s]wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+     93/100      3.34G      1.081     0.5557      0.826        164        640:  12%|█▎        | 12/96 [00:00<00:03, 27.15it/s]wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+     93/100      3.34G      1.081     0.5557      0.826        164        640:  12%|█▎        | 12/96 [00:00<00:03, 27.15it/s]wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+     93/100      3.45G      1.052     0.5492     0.8221        212        640:  69%|██████▉   | 66/96 [00:02<00:01, 26.82it/s]wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.09it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.09it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                   all        381       4567       0.74      0.583      0.617      0.353
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 26.09it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.51it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.51it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                   all        381       4567      0.744      0.575      0.604      0.351
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.51it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.88it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 24.88it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                   all        381       4567      0.731      0.571      0.603       0.35
+     96/100      3.25G      1.015     0.5281     0.8246        163        640:  25%|██▌       | 24/96 [00:01<00:04, 16.03it/s] 24.88it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+     96/100      3.25G      1.015     0.5281     0.8246        163        640:  25%|██▌       | 24/96 [00:01<00:04, 16.03it/s] 24.88it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.48it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.48it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                   all        381       4567      0.761      0.564      0.608      0.349
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.48it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 3/12 [00:00<00:00, 23.23it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 3/12 [00:00<00:00, 23.23it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                   all        381       4567      0.756      0.572      0.614      0.354
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 3/12 [00:00<00:00, 23.23it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 3/12 [00:00<00:00, 23.23it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/12 [00:00<?, ?it/s].23it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/12 [00:00<?, ?it/s].23it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                   all        381       4567      0.752      0.582       0.62      0.359
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/12 [00:00<?, ?it/s].23it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)mAP50  mAP50-95):   0%|          | 0/12 [00:00<?, ?it/s].23it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)mAP50  mAP50-95):   0%|          | 0/12 [00:00<?, ?it/s].23it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 9/12 [00:00<00:00, 25.41it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 9/12 [00:00<00:00, 25.41it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                   all        381       4567      0.761      0.581      0.624      0.358
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 9/12 [00:00<00:00, 25.41it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 9/12 [00:00<00:00, 25.41it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 9/12 [00:00<00:00, 25.41it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 9/12 [00:00<00:00, 25.41it/s]]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.83it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.83it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+100 epochs completed in 0.235 hours.
+Optimizer stripped from runs/detect/train16/weights/last.pt, 6.2MB
+Optimizer stripped from runs/detect/train16/weights/best.pt, 6.2MB
+Validating runs/detect/train16/weights/best.pt...
+Ultralytics YOLOv8.1.46 🚀 Python-3.10.12 torch-2.2.2+cu121 CUDA:0 (NVIDIA GeForce RTX 4090, 24195MiB)
+Model summary (fused): 168 layers, 3007208 parameters, 0 gradients, 8.1 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.83it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:00<00:00, 25.83it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+                   all        381       4567      0.759       0.58       0.62      0.358
+                   car        381       2081      0.832       0.77       0.82       0.55
+                 truck        381         29      0.996      0.793      0.924      0.672
+                   bus        381         95      0.789      0.537      0.577      0.399
+               bicycle        381        183      0.653      0.612      0.575      0.254
+               scooter        381        122      0.513      0.466      0.417      0.153
+                person        381       1647      0.741      0.475      0.541      0.262
+                 rider        381        410      0.792       0.41      0.483       0.22
+Speed: 0.0ms preprocess, 0.1ms inference, 0.0ms loss, 1.8ms postprocess per image
+wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>) [00:00<00:00, 25.83it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>) [00:00<00:00, 25.83it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: failed to find run YOLOv8/r9t2kff0 (<Response [404]>)<Response [404]>) [00:00<00:00, 25.83it/s]R Error while calling W&B API: run YOLOv8/r9t2kff0 not found during createRunFiles (<Response [404]>)
