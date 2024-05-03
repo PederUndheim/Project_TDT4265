@@ -22,6 +22,7 @@
 
 # Faster R-CNN
 
+-- Navigate to the folder Faster R-CNN
 
 -- install the requirements listed in the requirements.txt file
 
